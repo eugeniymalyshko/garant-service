@@ -1,0 +1,149 @@
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+/** TOP BAR **/
+#top-bar {
+	background-color: #141414;
+	font-size: 0.875rem;
+	padding: 8px 0;
+}
+#top-bar a {
+	color: #fff;
+}
+ul.sp-social-icons {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin:  -5px;
+}
+ul.sp-social-icons > li {
+	display: inline-block;
+	margin: 5px 7px;
+	white-space: nowrap;
+}
+.sp-contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0 -10px;
+	color: #fff;
+}
+.sp-contact-info li {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 90%;
+	white-space: nowrap;
+}
+<<<<<<< HEAD
+
+=======
+ul.sp-social-icons {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin:  -5px;
+	white-space: nowrap;
+}
+ul.sp-social-icons > li {
+	display: inline-block;
+	margin: 5px 7px;
+}
+>>>>>>> fd35c67730d2f6dc7e7ed5b0d2f8822623eb6b6a
+
+/** HEADER **/
+#sp-header {
+	height: 80px;
+	background-color: #f1f1f1;
+	left: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0 0 4px 0 #343a40;
+}
+#header-container {
+	margin: 0;
+	padding: 0;
+}
+
+div.logo {
+	display: inline-flex;
+	margin: 0;
+}
+#collapsable-nav {
+	float: right;
+}
+.navbar-nav, ul {
+	width: 100%;
+}
+.navbar {
+	padding: 0;
+}
+/** SLIDER **/
+
+#tile-1, #tile-2, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+#tile-1:hover, #tile-2:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+#tile-1 span, #tile-2 span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+/** FOOTER **/
+#pannel-footer {
+	background-color: #141414;
+	color: #fff;
+	font-size: 14px;
+	padding: 0;
+
+}	
+#pannel-footer .container-inner {
+	padding: 30px 0;
+	border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.scroll-up {
+	display: none;
+  	position: fixed;
+  	bottom: 30px;
+  	right: 30px;
+  	width: 36px;
+  	height: 36px;
+  	line-height: 36px;
+  	text-align: center;
+  	font-size: 16px;
+  	color: #fff;
+  	background: #333;
+  	border-radius: 3px;
+  	z-index: 1000;
+}
+/** MAIN CONTENT **/
+@media (min-width:1200px) {
+ 
+}
+
+/*********** Tablet version ***********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	
+/*********** Mobile version ***********/
+@media (max-width: 767px) {
+	
+	
+}
