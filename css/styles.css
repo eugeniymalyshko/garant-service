@@ -20,7 +20,7 @@ ul.sp-social-icons {
 }
 ul.sp-social-icons > li {
 	display: inline-block;
-	margin: 5px 7px;
+	margin: 5px 6px;
 	white-space: nowrap;
 }
 .sp-contact-info {
@@ -32,25 +32,9 @@ ul.sp-social-icons > li {
 .sp-contact-info li {
 	display: inline-block;
 	margin: 0 10px;
-	font-size: 90%;
+	font-size: 92%;
 	white-space: nowrap;
 }
-<<<<<<< HEAD
-
-=======
-ul.sp-social-icons {
-	list-style: none;
-	display: inline-block;
-	padding: 0;
-	margin:  -5px;
-	white-space: nowrap;
-}
-ul.sp-social-icons > li {
-	display: inline-block;
-	margin: 5px 7px;
-}
->>>>>>> fd35c67730d2f6dc7e7ed5b0d2f8822623eb6b6a
-
 /** HEADER **/
 #sp-header {
 	height: 80px;
@@ -140,10 +124,15 @@ div.logo {
 
 /*********** Tablet version ***********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.sp-social-icons {
+		font-size: 110%;
+	}
+}
 	
 /*********** Mobile version ***********/
 @media (max-width: 767px) {
 	
-	
+	.sp-social-icons {
+		font-size: 140%;
+	}
 }
