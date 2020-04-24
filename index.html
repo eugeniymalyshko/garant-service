@@ -8,15 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script>
   </head>
 <body>
+  <!-- Top Bar -->
 	<div id="top-bar">
 			<div class="container">
 				<div class="container-inner">
 					<div class="row">
-						<!-- Social buttons -->
+						
+            <!-- Social buttons -->
 						<div id="sp-top-left" class="col-lg-6">
 							<div class="sp-column text-center text-lg-left">
 								<ul class="sp-social-icons">
@@ -38,7 +40,8 @@
 								</ul>
 							</div>
 						</div> <!-- ./Social buttons -->
-						<!-- Contact information -->
+						
+            <!-- Contact information -->
 						<div id="sp-top-right" class="col-lg-6">
 							<div class="sp-column text-center text-lg-right">
 									<ul class="sp-contact-info">
@@ -64,26 +67,31 @@
 	
 	<header id="sp-header">
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- Main logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/Logo_garant.png" alt="main-logo" width="60px" height="60px">
-      </a>
-      <!-- Navbar Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        
+        <!-- Main logo -->
+        <a class="navbar-brand" href="#" >
+          <img src="images/Logo_garant.png" alt="main-logo" width="60px" height="60px">
+        </a>
+        <div class="slogan">
+          <h4 class="text-center d-none d-md-block">20 років у сфері обслуговування</h4>
+        </div>
+        
+        <!-- Navbar Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
       
-      <!-- Links Header -->
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto justify-content-end">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Головна</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Про нас</a>
-          </li>
-         <!-- <li class="nav-item dropdow active">
+        <!-- Links Header -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Головна</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Про компанію</a>
+            </li>
+            <!--<li class="nav-item dropdow active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Послуги
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -94,25 +102,33 @@
               <a class="dropdown-item" href="#">Барбекю</a>
               <a class="dropdown-item" href="#">Пікнік</a>
             </div>
-          </li> -->
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Галерея</a>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Lorem ipsum</a>
-              <a class="dropdown-item" href="#">Lorem ipsum</a>
-              <a class="dropdown-item" href="#">Lorem ipsum</a>
-              <a class="dropdown-item" href="#">Lorem ipsum</a>
-              <a class="dropdown-item" href="#">БLorem ipsum</a>
-              <a class="dropdown-item" href="#">Lorem ipsum</a>
-          </li>
-        </ul>
-      </div> <!-- ./navbarSupportedContent -->
-    </nav>
+            </li>-->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Галерея</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Lorem ipsum</a>
+                <a class="dropdown-item" href="#">Lorem ipsum</a>
+                <a class="dropdown-item" href="#">Lorem ipsum</a>
+                <a class="dropdown-item" href="#">Lorem ipsum</a>
+                <a class="dropdown-item" href="#">БLorem ipsum</a>
+                <a class="dropdown-item" href="#">Lorem ipsum</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Новини</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link d-none d-sm-block d-lg-none" href="index.html">Контакти</a>
+            </li>
+          </ul> <!-- ./navbar-nav ml-auto -->
+        </div> <!-- ./navbarSupportedContent -->
+      </nav>
+    </div> <!-- ./container -->
   </header>
+ 
     <!-- Slider-->
     <div id="carouselExampleCaptions" class="carousel slide active" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -124,7 +140,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="images/slider/slider-1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block" style="background-color: #000; opacity: .6; ">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
@@ -160,99 +176,214 @@
     
     <!-- Main content -->
     <div id="main-content" class="container">
-      <h2 class="text-center">Наші Послуги</h2>
+    <!-- Сделать на отдельной странице-->
+    <!-- <h3 class="text-center">Історія Компанії</h3>
+      <div class="row">
+        <div class="story-tile col-12">
+          <div class="story-text">
+            <p>
+              З моменту свого заснування у серпні 2000 року "Гарант-Сервіс" став незмінним учасником офіціальних, сімейних та дружніх соціальних подій - традицією, що дійшла до сьогодення. Заснований з метою кейтерингового обслуговування офіційних делегацій, представницьких заходів за участю вищих посадових державних осіб, вже багато років "Гарант-сервіс" поширює свій професійний та творчий досвід на проведення подій будь-якого масштабу: від невеличких сімейних свят до глобальних міжнародних подій.</p>
+              <p>Більш, ніж 20 років ми досліджуємо мистецтво кулінарії та кейтерингу: з усім розмахом і складністю, системністю та творчим підходом, класичними та іноваційними стравами. Та, звичайно, безумовною гостинністю та сервісом. З часів своєї появи і до сьогодні нашою місією є покращення внутрішніх та зовнішніх стандартів кейтерингового обслуговування, піклування про гастрономічні потреби своїх гостей та дарування їм натхнення та смакових емоцій.</p>
+              <p>Страви національної та європейської кухні ми прикрашаємо спадщинами передового досвіду та незрівнянним кулінарним талантом. До нашого складу входять два приміщення, розташовані на вул. Михайла Грушевського, 20/1 та вул. Михайла Грушевського, 22  кожне з яких має декілька містких залів та оперує власною виробничою структурою. Це надає нам абсолютної впевненості в тому, що подія відбудеться на вищому рівні - із стравами, приготованими зі свіжих локальних продуктів, з кулінарним талантом наших шеф-кухарів. Зберігаючи та вдосконалюючи стандарти та культуру кейтерингу, ми робимо новий вклад до своєї та вашої кулінарної історії. 20 років. Кожного дня.
+            </p>
+          </div>
+        </div>
+      </div>-->
+
+
+      <h3 class="text-center">Наші Послуги</h3>
       <section class="row">
-        <div id="item-tile" class="col-md-4">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
-              </div>
+        <!-- Catering -->
+        <div class="item-tile col-md-4 col-sm-12">
+          <div class="row" id="align-left">
+            <div class="col-sm-12">
+             
+                <div class="item-logo">
+                  <img src="https://img.icons8.com/ios-filled/100/000000/waiter.png"/>
+                  <div class="idem-description col-sm-12">
+                  <h4 class="item-name">Види Кейтерингу</h4>
+                  </div>
+                </div>
+              
             </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Кейтеринг</h3>
-            </div>
+            
           </div>
-        <hr class="vivible-xs">
         </div>
-        
-        <div id="item-tile" class="col-md-4">
+        <!-- Desserts -->
+        <div class="item-tile col-md-4 item-group">      
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-12">
               <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
+                <img src="images/icons/birthday-cake.png" alt="wedding-cake" width="50px" height="50px">
               </div>
             </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Кондітерські вироби</h3>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Кондитерські вироби</h4>
             </div>
           </div>
-        <hr class="vivible-xs">
-        </div>  
-
-        <div id="item-tile" class="col-md-4">
+        </div>       
+        <!-- Banket-Hall -->  
+        <div class="item-tile col-md-4 item-group">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-12">
               <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
+                <img src="images/icons/banket-table.png" alt="wedding-cake" width="50px" height="50px">
               </div>
             </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Банкетні залі</h3>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Банкетні зали</h4>
             </div>
           </div>
-         <hr class="vivible-xs">
-        </div>  
-
-        <div id="item-tile" class="col-md-4">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
-              </div>
-            </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Кейтеринг</h3>
-            </div>
-          </div>
-         <hr class="vivible-xs">
-        </div>
-        
-        <div id="item-tile" class="col-md-4">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
-              </div>
-            </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Кейтеринг</h3>
-            </div>
-          </div>
-         <hr class="vivible-xs">
-        </div>  
-
-        <div id="item-tile" class="col-md-4">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="item-logo">
-                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="60px" height="60px">
-              </div>
-            </div>
-            <div class="idem-description col-sm-7">
-              <h3 class="item-name">Кейтеринг</h3>
-            </div>
-          </div>
-        <!--  <hr class="vivible-xs">-->
         </div> 
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">    
+          <div class="row">
+            <div class="col-sm-12" >
+              <div class="item-logo">
+                <img src="images//icons/catering.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Lorem ipsum</h4>
+            </div>
+          </div>
+        </div> 
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">     
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Lorem ipsum</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Lorem ipsum</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+  
 
-          
-
+      <!-- Advantage -->
+      <h3 class="text-center">Наші Переваги</h3>
+      <section class="row">
+        <!-- -->
+        <div class="item-tile col-md-4">
+          <div class="row">
+            <div class="col-sm-12">
+             
+                <div class="item-logo">
+                  <img src="images/icons/catering.png" alt="catering" width="50px" height="50px">
+                </div>
+              
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 1</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="item-tile col-md-4 item-group">      
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/birthday-cake.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 2</h4>
+            </div>
+          </div>
+        </div>       
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/banket-table.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 3</h4>
+            </div>
+          </div>
+        </div> 
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">    
+          <div class="row">
+            <div class="col-sm-12" >
+              <div class="item-logo">
+                <img src="images//icons/catering.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 4</h4>
+            </div>
+          </div>
+        </div> 
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">     
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 5</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->  
+        <div class="item-tile col-md-4 item-group">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="item-logo">
+                <img src="images/icons/wedding-cake.png" alt="wedding-cake" width="50px" height="50px">
+              </div>
+            </div>
+            <div class="idem-description col-sm-12">
+              <h4 class="item-name">Перевага 6</h4>
+            </div>
+          </div>
+        </div>
       </section>
 
-
-</div>
-      
+      <div>
+      <section class="row">
+       <div class="container">
+          <h3 class="text-center">Наші Переваги</h3>
+          <div class="advantage-expl">
+            <p>Сучасний, а не модний. 
+              Шикарний, а не ексцентричний.
+              "Гарант-Сервіс". Хранитель традицій гостинності з 17-річною історією.
+              "Гарант-Сервіс" - класичний кейтеринговий сервіс високого класу, що організовує кейтеринг для корпоративних та приватних подій - від масштабного прийому до невеликого родинного свята.
+              Наша пристрасть до кейтерингу розповсюджується на меню, яке ми розробляємо, кулінарні тренди, що ми відмічаємо, та сервіси обслуговування, які ми пропонуємо.</p>
+              <p>Слідуючи безперервному 17-річному марафону, ми не лишаємо поза увагою світові кулінарні тенденції та іновації. Сьогодні наші шеф-кухарі експерементують на межі традиційності та іноваційності, популярних смаків та світових сенсацій, переплетаючи класику зі свіжими техніками та ароматами.
+              Ми створюємо страви, або ціле меню, надихаючись вашими улюбленими інгредієнтами, вашим власним стилем та концепцією події.</p>
+              <p>До нашої команди входить спеціальний штат, який спеціалізується на проведенні дипломатичних візитів із врахуванням спеціальних міжнародних стандартів.
+              Їхній глобальний досвід, знання, а також увага до дрібниць дарують беззаперечну впевненість в найвищому рівні організації події.
+              Виключні офіційні візити, конференції, презентації, гала-вечері та корпоративи.
+              Емоційні приватні події - елегантні весілля, ювілеї, дні народження та хрестини.
+              В найкращих традиціях гостинності та сервісу.
+            </p>
+          </div>
+        </div>
+      </section>
+      </div>
         
       
       <!--<div id="main-tiles" class="row">
@@ -382,32 +513,34 @@
         
       </div>--> <!-- ./home-tiles -->
     
-    
+    </div>  <!-- ./main-content -->
     <bottom>
       <div class="container">
-      <div id="" class="row">
-        <div class="col-md-4">
-          <a href="#"><div id="tile-1" class="bottom-box">
-            <span>Lorem ipsum</span></div>
-          </a>
-        </div>
+        <div id="" class="row">
+          <div class="col-md-4">
+            <a href="#"><div id="tile-1" class="bottom-box">
+              <span>Lorem ipsum</span></div>
+            </a>
+          </div>
 
-        <div class="col-md-4">
-        <a href="#"><div id="tile-2" class="bottom-box">
-          <span>Lorem ipsum</span></div>
-        </a>
-        </div>
+          <div class="col-md-4">
+            <a href="#"><div id="tile-2" class="bottom-box">
+              <span>Lorem ipsum</span></div>
+            </a>
+          </div>
       
-        <div class="col-md-4">
-          <a href="https://goo.gl/maps/uvUw6tS5yVmxdSTf8" target="_blank">
-          <div id="map-tile" class="bottom-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7005967382293!2d30.534219115731275!3d50.44667727947484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfacdfced29d%3A0x7f76a5a2ee19f071!2sHromads%CA%B9ke%20Kafe%20Tov%20%22Harant-Servis%22!5e0!3m2!1sru!2sua!4v1587304962134!5m2!1sru!2sua" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <span>Наше місцезнаходженя</span>
-          </div></a>
+          <div class="col-md-4">
+            <a href="https://goo.gl/maps/uvUw6tS5yVmxdSTf8" target="_blank">
+              <div id="map-tile" class="bottom-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7005967382293!2d30.534219115731275!3d50.44667727947484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfacdfced29d%3A0x7f76a5a2ee19f071!2sHromads%CA%B9ke%20Kafe%20Tov%20%22Harant-Servis%22!5e0!3m2!1sru!2sua!4v1587304962134!5m2!1sru!2sua" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <span>Наше місцезнаходженя</span>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </bottom>
+    
     <footer id="pannel-footer">
       <div class="container">
         <div class="container-inner">
@@ -424,7 +557,7 @@
              </section>
              <section id="sp-footer" class="col-lg-4">
               <div class="sp-column">
-                <span class=""></span>
+                <span class="">Залишити заявку</span>
               </div>
              </section>
           </div>
