@@ -3,6 +3,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #000;
 }
+.title {
+	text-transform: uppercase;
+}
 /** TOP BAR **/
 #top-bar {
 	background-color: #141414;
@@ -85,16 +88,9 @@ nav.navbar  {
 	width: 100%;
 	height: 100%;
 }
-/** MAIN CONTENT **/
-
-.cotnent-up h3 {
-	padding: 60px 0;
-}
-#main-content {
-	/*margin-bottom: 60px;*/
-	display: block;
-	/*text-decoration: none;
-	color: #000;*/
+/** SERVICE **/
+.cotnent-service h3 {
+	padding: 40px 0;
 }
 .first-box {
 	height: 400px;
@@ -107,7 +103,7 @@ nav.navbar  {
 .catering {
 	background: url(../images/catering.jpg) no-repeat;
 	background-size: cover;
-	background-position: 10em auto;
+	background-position: center;
 }
 .block-hover {
 	position: absolute;
@@ -117,12 +113,27 @@ nav.navbar  {
 	top: 0;
 	background:rgba(255,255,255, 0.8);
     padding:10px 25px;
-    display:none;
+    display: none;
 }
 .first-box:hover .block-hover {
 	display: block;
 	transition: all 0.7s ease;
-} 
+}
+.block-hover h4 {
+	padding-top: 25px;
+}
+.block-hover ul {
+	padding: 0;
+}
+.block-hover ul li {
+	padding-top: 0.4em;
+	list-style: none;
+	font-size: 1.3em;
+}
+.block-hover button {
+	display: flex;
+	margin: 0 auto;
+}
 .first-box span {
 	position: absolute;
 	bottom: 0;
@@ -156,7 +167,7 @@ nav.navbar  {
 	background: #f1f1f1;
 }
 .content-middle h3 {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 /***********************/
 /* CHECKED */
@@ -165,10 +176,10 @@ nav.navbar  {
 	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 #advantages .col-md-6:nth-child(n+3) {
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 .item-tile {
@@ -193,7 +204,7 @@ div.advantage-expl > p{
 }
 /** BOTTOM **/
 #bottom-content {
-	padding: 60px 0;
+	padding: 40px 0;
 
 }
 .bottom-box {
