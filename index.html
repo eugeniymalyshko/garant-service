@@ -63,17 +63,24 @@
 				</div>
 			</div> <!-- ./Container-->
   </div> <!-- ./Top bar-->
-	
-	<header id="sp-header">
+	<!-- Header -->
+  <header id="sp-header">
+      <div class="overlay"></div>
+    <!-- Caption -->
+    <div class="caption text-center w-100 d-xs-none d-sm-block">
+      <h1>First slide label</h1>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <button type="button" id="make-order" class="btn btn-outline-light btn-lg" style="margin-top: 10px;">Замовити</button>
+    </div>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- Main logo -->
-        <a class="navbar-brand" href="#" >
-          <img src="images/Logo_garant.png" alt="main-logo" width="60px" height="60px">
-        </a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Slogan -->
         <div class="slogan">
           <h5 class="text-center d-none d-md-block">20 років у сфері обслуговування</h5>
         </div>
+        <!-- logo -->
+        <a class="navbar-brand ml-auto align-items-center"href="index.html">
+        </a> 
         <!-- Navbar Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -87,18 +94,6 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Про компанію</a>
             </li>
-            <!--<li class="nav-item dropdow active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Послуги
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Фуршет</a>
-              <a class="dropdown-item" href="#">Банкет</a>
-              <a class="dropdown-item" href="#">Кава-Брейк</a>
-              <a class="dropdown-item" href="#">Коктейль</a>
-              <a class="dropdown-item" href="#">Барбекю</a>
-              <a class="dropdown-item" href="#">Пікнік</a>
-            </div>
-            </li>-->
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Галерея</a>
             </li>
@@ -106,12 +101,10 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Lorem ipsum</a>
-                <a class="dropdown-item" href="#">Lorem ipsum</a>
-                <a class="dropdown-item" href="#">Lorem ipsum</a>
-                <a class="dropdown-item" href="#">Lorem ipsum</a>
-                <a class="dropdown-item" href="#">БLorem ipsum</a>
-                <a class="dropdown-item" href="#">Lorem ipsum</a>
+                <a class="dropdown-item" href="#">Фуршет</a>
+                <a class="dropdown-item" href="#">Банкет</a>
+                <a class="dropdown-item" href="#">Кава-Брейк</a>
+                <a class="dropdown-item" href="#">Барбекю</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Новини</a>
@@ -121,78 +114,74 @@
             </li>
           </ul> <!-- ./navbar-nav ml-auto -->
         </div> <!-- ./navbarSupportedContent -->
+       </div>
       </nav>
     </div> <!-- ./container -->
   </header>
-  <!-- Slider-->
-  <div id="carousel-сaptions" class="carousel slide active" data-ride="carousel">
-    <!--<ol class="carousel-indicators">
+ <!-- Slider
+      <div id="carousel-сaptions" class="carousel slide active carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
         <li data-target="#carousel-сaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-сaptions" data-slide-to="1"></li>
         <li data-target="#carousel-сaptions" data-slide-to="2"></li>
-      </ol>-->
-      
+        <li data-target="#carousel-сaptions" data-slide-to="3"></li>
+      </ol> -->
+      <!-- Slide 1 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/slider/1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+            <img src="images/slider/1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-xs-none d-sm-block">
             <h1>First slide label</h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             <button type="button" id="make-order" class="btn btn-outline-light btn-lg" style="margin-top: 10px;">Замовити</button>
           </div>
-        </div>
-        
+        </div> -->
+        <!-- Slide 2
         <div class="carousel-item">
-          <img src="images/slider/2.jpg" class="d-block w-100" alt="...">
-           <div class="carousel-caption d-none d-md-block">
+            <img src="images/slider/2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
             <h1>Second slide label</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div> -->
+        <!-- Slide 3 
         <div class="carousel-item">
-          <img src="images/slider/3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+            <img src="images/slider/3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
             <h1>Third slide label</h1>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
+        </div> -->
+        <!-- Slide 4 
+        <div class="carousel-item">
+            <img src="images/slider/5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>fourth</h1>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
         </div>
-        <div class="cover"></div>
-      </div>
-      
+      </div> -->
+      <!-- Carousel Controls 
       <a class="carousel-control-prev" href="#carousel-сaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      
       <a class="carousel-control-next" href="#carousel-сaptions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-  </div> <!-- ./Slider -->
-      
+  </div>  ./Slider -->
+
+
+
   <!-- Service -->
   <div class="cotnent-service">
     <!-- Main content -->
     <div class="container">
         <h3 class="text-center title">Наші Послуги</h3>
-
-                <!-- Сделать на отдельной странице-->
-                <!-- <h3 class="text-center">Історія Компанії</h3>
-                <div class="row">
-                  <div class="story-tile col-12">
-                    <div class="story-text">
-                <p>
-              З моменту свого заснування у серпні 2000 року "Гарант-Сервіс" став незмінним учасником офіціальних, сімейних та дружніх соціальних подій - традицією, що дійшла до сьогодення. Заснований з метою кейтерингового обслуговування офіційних делегацій, представницьких заходів за участю вищих посадових державних осіб, вже багато років "Гарант-сервіс" поширює свій професійний та творчий досвід на проведення подій будь-якого масштабу: від невеличких сімейних свят до глобальних міжнародних подій.</p>
-              <p>Більш, ніж 20 років ми досліджуємо мистецтво кулінарії та кейтерингу: з усім розмахом і складністю, системністю та творчим підходом, класичними та іноваційними стравами. Та, звичайно, безумовною гостинністю та сервісом. З часів своєї появи і до сьогодні нашою місією є покращення внутрішніх та зовнішніх стандартів кейтерингового обслуговування, піклування про гастрономічні потреби своїх гостей та дарування їм натхнення та смакових емоцій.</p>
-              <p>Страви національної та європейської кухні ми прикрашаємо спадщинами передового досвіду та незрівнянним кулінарним талантом. До нашого складу входять два приміщення, розташовані на вул. Михайла Грушевського, 20/1 та вул. Михайла Грушевського, 22  кожне з яких має декілька містких залів та оперує власною виробничою структурою. Це надає нам абсолютної впевненості в тому, що подія відбудеться на вищому рівні - із стравами, приготованими зі свіжих локальних продуктів, з кулінарним талантом наших шеф-кухарів. Зберігаючи та вдосконалюючи стандарти та культуру кейтерингу, ми робимо новий вклад до своєї та вашої кулінарної історії. 20 років. Кожного дня.
-                </p>
-                    </div>
-                  </div>
-                </div>-->
-    <div class="row">
-      <!-- Catering -->
-      <div class="col-md-6">
+      <div class="row">
+        <!-- Catering -->
+        <div class="col-md-6">
           <div id="tile-1" class="first-box catering">
             <div class="block-hover">
                 <h4 class="text-center">В нас ви можете замовити такі послуги:</h4>
@@ -203,11 +192,12 @@
                 <li>Барбекю</li>
                 <li>Пікнік</li>
               </ul>
-              <button type="button" id="make-order" class="btn btn-outline-dark btn-lg text-center">Докладнійше</button>
+              <a href="#">
+              <button type="button" id="make-order" class="btn btn-outline-dark btn-lg text-center">Докладнійше</button></a>
             </div>
               <span>Кейтеринг</span>
           </div>
-      </div>
+        </div>
         <!-- Desserts -->
         <div class="col-md-6">
             <div id="tile-2" class="first-box desserts">
@@ -220,160 +210,103 @@
                   <li>Десерт 4</li>
                   <li>Десерт 5</li>
                 </ul>
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button>
+                <a href="#">
+                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
               </div>
               <span>Десерти на замовлення</span>
             </div>
         </div>
         <!-- Delivery -->
         <div class="col-md-6">
-          <a href="#">
             <div id="title-3" class="first-box delivery">
               <div class="block-hover">
                   <h4 class="text-center">Доставляємо обіди в офіс:</h4>
                 <ul class="text-center">
-                  <li>Десерт 1</li>
-                  <li>Десерт 2</li>
-                  <li>Десерт 3</li>
-                  <li>Десерт 4</li>
-                  <li>Десерт 5</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
                 </ul>
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button>
+                <a href="#">
+                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
               </div>
               <span>Доставка Обідів</span>
             </div>
-          </a>
         </div>
         <!--  -->
         <div class="col-md-6">
-          <a href="#">
-            <div id="title-4" class="first-box itc">
+          <div id="title-4" class="first-box itc">
               <div class="block-hover">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ut cupiditate nisi incidunt quisquam inventore, debitis perferendis iste dicta laborum iure enim autem illum fugit ab officia neque. Quidem, totam! <br>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptate doloribus, ratione expedita quasi quod quos nulla repellendus eius temporibus porro iusto, sed officia qui ea, iste cumque. Labore, saepe?
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quo, harum in maxime consequuntur odit similique recusandae cum, minima, beatae voluptate blanditiis quasi. Aperiam ea ullam necessitatibus vitae tempore dolorum!
-                </p>
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button>
+                 <h4 class="text-center">Lorem ipsum:</h4>
+                <ul class="text-center">
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                  <li>lorem ipsum</li>
+                </ul>
+                <a href="#">
+                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
               </div>
-              <span>Lorem ipsum</span>
-            </div>
-          </a>
+                <span>Lorem ipsum</span>
+          </div>
         </div>
-      </div> <!--./service -->
-    </div> <!-- ./Main Contetnt -->
-  </div> <!-- ./cotnent-up -->
-
-<!------------------Checked----------------------------->
-
-
-
-    
-    <div class="content-middle">
-       <!-- Middle content -->
-      <div id="middle-content" class="container">
-          <h3 class="text-center title">Переваги</h3>
-        <div id="advantages" class="row">
-          <!-- 1 -->
-          <div class="col-md-6 col-sm-12">
-            
-              <div id="advantage-1" class="second-box">
-                <span>Перевага 1</span>
-                <p>
-                  Сучасний, а не модний. 
-                  Шикарний, а не ексцентричний.
-                  "Гарант-Сервіс". Хранитель традицій гостинності з 17-річною історією.
-                  "Гарант-Сервіс" - класичний кейтеринговий сервіс високого класу, що організовує кейтеринг для корпоративних та приватних подій - від масштабного прийому до невеликого родинного свята.
-                  Наша пристрасть до кейтерингу розповсюджується на меню, яке ми розробляємо, кулінарні тренди, що ми відмічаємо, та сервіси обслуговування, які ми пропонуємо.
-                </p>  
-              </div>
+      </div>
+    </div>
+  </div> <!-- ./cotnent-service -->
+  <!-- Content Middle  -->
+  <div class="content-middle">
+    <div id="middle-content" class="container">
+        <h3 class="text-center title">Переваги</h3>
+      <div id="advantages" class="row">
+        <!-- 1 -->
+        <div class="col-md-6 col-sm-12">
+          <div id="advantage-1" class="second-box">
+              <span>Перевага 1</span>
+            <p>
+              Сучасний, а не модний. 
+              Шикарний, а не ексцентричний.
+              "Гарант-Сервіс". Хранитель традицій гостинності з 17-річною історією.
+              "Гарант-Сервіс" - класичний кейтеринговий сервіс високого класу, що організовує кейтеринг для корпоративних та приватних подій - від масштабного прийому до невеликого родинного свята.
+              Наша пристрасть до кейтерингу розповсюджується на меню, яке ми розробляємо, кулінарні тренди, що ми відмічаємо, та сервіси обслуговування, які ми пропонуємо.    
+            </p>  
           </div>
-          <!-- 2 -->
-          <div class="col-md-6 col-sm-12">
-              <div id="advantage-2" class="second-box">
-                <span>Перевага 2</span>
-                <p>
-                  лідуючи безперервному 17-річному марафону, ми не лишаємо поза увагою світові кулінарні тенденції та іновації. Сьогодні наші шеф-кухарі експерементують на межі традиційності та іноваційності, популярних смаків та світових сенсацій, переплетаючи класику зі свіжими техніками та ароматами.
-                  Ми створюємо страви, або ціле меню, надихаючись вашими улюбленими інгредієнтами, вашим власним стилем та концепцією події
-                </p>
-              </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-md-6 col-sm-12">
+          <div id="advantage-2" class="second-box">
+              <span>Перевага 2</span>
+            <p>
+              лідуючи безперервному 17-річному марафону, ми не лишаємо поза увагою світові кулінарні тенденції та іновації. Сьогодні наші шеф-кухарі експерементують на межі традиційності та іноваційності, популярних смаків та світових сенсацій, переплетаючи класику зі свіжими техніками та ароматами.
+              Ми створюємо страви, або ціле меню, надихаючись вашими улюбленими інгредієнтами, вашим власним стилем та концепцією події
+            </p>
           </div>
-          <!-- 3 -->
-          <div class="col-md-6">
-            <div id="advantage-3" class="second-box">
+        </div>
+        <!-- 3 -->
+        <div class="col-md-6">
+          <div id="advantage-3" class="second-box">
               <span>Перевага 3</span>
-                <p>
-                  До нашої команди входить спеціальний штат, який спеціалізується на проведенні дипломатичних візитів із врахуванням спеціальних міжнародних стандартів.
-                  Їхній глобальний досвід, знання, а також увага до дрібниць дарують беззаперечну впевненість в найвищому рівні організації події.
-                </p>
-            </div>
+            <p>
+              До нашої команди входить спеціальний штат, який спеціалізується на проведенні дипломатичних візитів із врахуванням спеціальних міжнародних стандартів.
+              Їхній глобальний досвід, знання, а також увага до дрібниць дарують беззаперечну впевненість в найвищому рівні організації події.
+            </p>
           </div>
-          <!-- 4 -->
-          <div class="col-md-6">
-            <div id="title-4" class="second-box">
+        </div>
+        <!-- 4 -->
+        <div class="col-md-6">
+          <div id="title-4" class="second-box">
               <span>Перевага 4</span>
-              <p>
-                Виключні офіційні візити, конференції, презентації, гала-вечері та корпоративи.
-                Емоційні приватні події - елегантні весілля, ювілеї, дні народження та хрестини.
-                В найкращих традиціях гостинності та сервісу.
-              </p>
-            </div>
+            <p>
+              Виключні офіційні візити, конференції, презентації, гала-вечері та корпоративи.
+              Емоційні приватні події - елегантні весілля, ювілеї, дні народження та хрестини.
+              В найкращих традиціях гостинності та сервісу.
+            </p>
           </div>
-        </div> <!--./ -->
-      </div> <!-- ./#Middle Contetnt -->
-    </div> <!-- ./.Content Middle -->
-      
-          
-
-
-
-         
-        
-          
-   
-
-
-
-
-        <!--<div class="col-md-4">
-            <ul class="propositions" id="stand-up-meal">
-              <li>
-                <a href="#"><span></span></a>
-          
-                  <ul>
-                    <li>
-                      <a href="#"><span>Банкет</span></a>
-                    </li>
-                  </ul>
-              </li>
-
-            </ul>
-            
-                   
-                    
-                  
-                
-              </div>
-      
-         
-         
-         <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-        
-        
-      </div>--> <!-- ./home-tiles -->
-    
-    </div>  <!-- ./main-content -->
-  </div>
+        </div>
+      </div> <!--./ -->
+    </div> <!-- ./#Middle Contetnt -->
+  </div> <!-- ./.Content Middle -->
   <!-- Team -->
   <div id="team"> 
     <div class="container ">
@@ -386,7 +319,6 @@
           </div>
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-2" class="staff-box"></div>
@@ -394,7 +326,6 @@
           </div> 
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-3" class="staff-box"></div>
@@ -402,7 +333,6 @@
           </div>
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
             <div id="staff-4" class="staff-box"></div>
@@ -410,7 +340,6 @@
           </div>  
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-2" class="staff-box"></div>
@@ -418,7 +347,6 @@
           </div>
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-6" class="staff-box"></div>
@@ -426,7 +354,6 @@
           </div> 
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-7" class="staff-box"></div>
@@ -434,7 +361,6 @@
           </div>  
           <div class="post text-center"><h5>Шеф-кухар</h5></div>
         </div>
-
         <div class="col-md-3">
           <div class="staff-name">
               <div id="staff-8" class="staff-box"></div>
@@ -445,12 +371,40 @@
       </div>
     </div>
   </div>  <!-- ./Team --> 
-
-  
-
-
-<div id="bottom-content">
-  <bottom>
+  <!-- News -->
+  <div id="news">
+    <div class="container">
+        <h3 class="text-center title">Новини</h3>
+      <div id="" class="row">
+        <div class="col-md-3">
+          <a href="#"><div id="news-1" class="bottom-box">
+            <span>Lorem ipsum</span></div>
+          </a>
+          <a class="linc-to-news" href="#"><span>Всі новини</span></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#"><div id="news-2" class="bottom-box">
+            <span>Lorem ipsum</span></div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#"><div id="news-2" class="bottom-box">
+            <span>Lorem ipsum</span></div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <div id="news-1" class="bottom-box">
+              <span>Lorem ipsum</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- ./News -->
+  <!--  -->
+  <div id="bottom-content">
+    <bottom>
       <div class="container">
         <div id="" class="row">
           <div class="col-md-4">
@@ -458,60 +412,54 @@
               <span>Lorem ipsum</span></div>
             </a>
           </div>
-
           <div class="col-md-4">
             <a href="#"><div id="tile-2" class="bottom-box">
               <span>Lorem ipsum</span></div>
             </a>
           </div>
-      
           <div class="col-md-4">
             <a href="https://goo.gl/maps/uvUw6tS5yVmxdSTf8" target="_blank">
               <div id="map-tile" class="bottom-box">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7005967382293!2d30.534219115731275!3d50.44667727947484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfacdfced29d%3A0x7f76a5a2ee19f071!2sHromads%CA%B9ke%20Kafe%20Tov%20%22Harant-Servis%22!5e0!3m2!1sru!2sua!4v1587304962134!5m2!1sru!2sua" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <span>Наше місцезнаходженя</span>
+                  <span>Наше місцезнаходженя</span>
               </div>
             </a>
           </div>
         </div>
       </div>
     </bottom>
-</div>
-    
-    
-    <footer id="pannel-footer">
-      <div class="container">
-        <div class="container-inner">
-          <div class="row">
-            <section id="sp-footer" class="col-lg-4">
-              <div class="sp-column">
-                <span class="copyrite">&copy 2020 Гарант-Сервіс</span>
-              </div>
-             </section>
-             <section id="sp-footer" class="col-lg-4">
-              <div class="sp-column">
-                <span class="reports"><a href="#"><p>Звітність</p></a></span>
-              </div>
-             </section>
-             <section id="sp-footer" class="col-lg-4">
-              <div class="sp-column">
-                <button type="button" id="make-order" class="btn btn-outline-light btn-lg">Залишити заявку
-            </button>
-              </div>
-             </section>
-          </div>
+  </div>
+  <footer id="pannel-footer">
+    <div class="container">
+      <div class="container-inner">
+        <div class="row">
+          <section id="sp-footer" class="col-lg-4">
+            <div class="sp-column">
+              <span class="copyrite">&copy 2020 Гарант-Сервіс</span>
+            </div>
+          </section>
+          <section id="sp-footer" class="col-lg-4">
+            <div class="sp-column">
+              <a class="reports" href="#">Звітність</a>
+            </div>
+          </section>
+          <section id="sp-footer" class="col-lg-4">
+            <div class="sp-column">
+              <button type="button" id="make-order" class="btn btn-outline-light btn-lg">Залишити заявку</button>
+            </div>
+          </section>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
     <!-- Go to top -->
     <a href="#" class="scroll-up" aria-lable="Угору" style="display: block;">
       <span class="fa fa-chevron-up" aria-hidden="true"></span>  
     </a>
-
- 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
