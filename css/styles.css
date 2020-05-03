@@ -24,7 +24,7 @@ body {
 }
 .sp-social-icons > li {
 	display: inline-block;
-	margin: 5px 5px;
+	margin: 5px 8px;
 	white-space: nowrap;
 }
 .sp-contact-info {
@@ -41,58 +41,55 @@ body {
 }
 /** HEADER **/
 #sp-header {
-	background: url(../images/slider/jumbotron-2000-px.jpg) no-repeat;
+	background: url(../images/slider/jumbotron-2000-px.jpg); no-repeat;
 	background-size: cover;
 	background-position:  center;
 	background-color: #f1f1f1;
 	position: relative;
 	width: 100%;
 	z-index: 99;
-	box-shadow: 0 0 2px 0 #343a40;
 	height: 100vh;
 }
 .overlay {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: #CCCCFF;
+	background: #000;
 	opacity: 0.1;
 	min-width: 100%;
 	min-height: 100%;
 }
-.caption{
-	position: absolute;
-	top: 50%;
-	color: #fff;
-	margin-right: 38px;
-	margin-left: -38px;
-	padding-right: 15px;
-	padding-left: 15px;
+.navbar  {
+	width: 100%;
 }
 .navbar-brand {
 	background: url(../images/Logo_garant-1000x1000px.png) no-repeat;
 	background-size: cover;
-	background-position:  center;
-	width: 100px;
-	height: 100px;
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-}
-nav.navbar  {
-	padding: 2px 0;
+	background-position: center;
+	width: 75px;
+	height: 75px;
 }
 .slogan > h5 {
-	margin: auto 0 auto 8px;
 	font-weight: 100;
 	color: #fff;
+	margin: 5px 0 0 20px;
 }
-#navbarSupportedContent {
-	flex-grow: 0;
+#navbarSupportedContent, .navbar-nav {
+	margin-right: -5px;
+	margin-top: 5px;
 }
 .navbar-nav > li {
 	text-transform: uppercase;
 	font-size: 0.8em;
+}
+.caption {
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	top: 15em;
 }
 /** SERVICE **/
 .cotnent-service h3 {
@@ -385,7 +382,7 @@ a.reports, a.reports:hover {
 }
 
 .scroll-up {
-	display: none;
+	/*display: none;
   	position: fixed;
   	bottom: 30px;
   	right: 30px;
@@ -397,8 +394,20 @@ a.reports, a.reports:hover {
   	color: #fff;
   	background: #333;
   	border-radius: 3px;
-  	z-index: 1000;
+  	z-index: 1000;*/
 }
+.scrollup	{
+	width:40px;
+	height:40px;
+	opacity:0.3;
+	position:fixed;
+	bottom:50px;
+	right: 30px;
+	display:none;
+	text-indent:-9999px;
+	background: url(../images/icon_top.png) no-repeat;
+}
+
 /** MAIN CONTENT **/
 @media (min-width:1200px) {
 	.slogan h4 {
@@ -439,29 +448,31 @@ a.reports, a.reports:hover {
 	.sp-social-icons {
 		font-size: 140%;
 	}
-	.navbar-nav {
-		background-color: #fff;
+	.navbar-dark .navbar-nav .active > .nav-link {
+		color: #000;
 	}
-	li.nav-item-active .nav-link {
-		color: #fff;
-	}
-	ul.navbar-nav {
+	.navbar-nav li > a {
 		text-align: center;
   		margin: 10px auto;
   		font-size: 1.3em;
   	}
   	ul.navbar-nav > li {
-  		padding-top: 10px;
+  		padding-top: 5px;
   	}
   	#sp-header {
   		background: url(../images/slider/jumbotron-1200-px.jpg) no-repeat;
-		height: 250px;
-  	}
-  	a > .navbar-brand {
-	justify-content: left;
-	width: 80px;
-	height: 80px;
-}
+		height: 190px;
+		background-size: cover;
+		background-position:  center;
+	}
+  	.navbar-brand {
+	width: 60px;
+	height: 60px;
+	padding-top: 20px;
+	}
+	.logo {
+		margin-top: 15px;
+	}
 
 
 
