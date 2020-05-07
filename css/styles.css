@@ -91,17 +91,28 @@ body {
 	margin-right: -5px;
 	margin-top: 5px;
 }
-.navbar-nav > li {
+.navbar-nav li {
 	text-transform: uppercase;
 	font-size: 0.8em;
 }
+.navbar-nav li a {
+	transition: 0.4s;
+	color: #fff;
+	border-radius: 0.4rem; 
+
+}
+.navbar-nav li > a:hover {
+	transition: 0.3s;
+	color: #000;
+	background: #f8f9fa;
+	border-radius: 0.4rem; 
+}
 .caption {
 	text-align: center;
-	color: #ccc;
+	color: #fff;
 	top: 15em;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 /** SERVICE **/
 .cotnent-service h3 {
@@ -113,45 +124,6 @@ body {
 	position: relative;
 	overflow: hidden;
 	margin-top: 30px;
-	margin-bottom: 40px;
-}
-.catering {
-	background: url(../images/catering.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.block-overlay {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	background:rgba(255,255,255, 0.8);
-    padding:10px 25px;
-    display: none;
-}
-.service-box:hover .block-overlay {
-	display: block;
-	transition: all 0.7s ease;
-}
-.block-overlay h4 {
-	padding-top: 25px;
-}
-.block-overlay ul {
-	padding: 0;
-}
-.block-overlay ul li {
-	padding-top: 0.4em;
-	list-style: none;
-	font-size: 1.3em;
-}
-.block-overlay button {
-	display: flex;
-	margin: 0 auto;
-}
-.block-overlay a, a:hover {
-	text-decoration: none;
-	color: #000;
 }
 .service-box span {
 	position: absolute;
@@ -166,51 +138,96 @@ body {
 	opacity: .7;
 	padding: 10px 0;
 }
+.block-overlay {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background:rgba(255,255,255, 0.8);
+    padding:10px 25px;
+}
+.service-box:hover .block-overlay {
+	display: block;
+	transition:  0.7s;
+}
+.block-overlay h4 {
+	padding-top: 10px;
+}
+.block-overlay ul {
+	padding: 0;
+}
+.block-overlay ul li {
+	padding-top: 0.4em;
+	list-style: none;
+	font-size: 1.3em;
+}
+.block-overlay button {
+	display: flex;
+	margin: 0 auto;
+}
+.block-overlay a, .block-overlay a:hover {
+	text-decoration: none;
+	color: #000;
+}
+.banquet {
+	background: url(../images/service/banquet.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 .desserts {
-	background: url(../images/desserts.jpg) no-repeat;
+	background: url(../images/service/desserts.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .lunch {
-	background: url(../images/delivery.jpg) no-repeat;
+	background: url(../images/service/delivery.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .board-food {
-	background: url(../images/plane.jpg) no-repeat;
+	background: url(../images/service/plane.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .pizza {
-	background: url(../images/pizza.jpg) no-repeat;
+	background: url(../images/service/pizza.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .semifinished {
-	background: url(../images/ravioli.jpg) no-repeat;
+	background: url(../images/service/ravioli.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-/** CONTENT-MIDDLE **/
-.content-middle {
-	background: #f1f1f1;
-}
-.content-middle h3 {
-	padding: 40px 0;
-}
-/***********************/
-/* CHECKED */
-
+/** ADVANTAGES **/
 #advantages {
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 40px;
+	background: #f1f1f1;
+	margin-top: 80px;
 }
+#advantages h3 {
+	padding-top: 80px;
+}
+.advantage-box {
+	max-width: 90%;
+	
+	margin-top: 30px;
+	padding-bottom: 80px;
+}
+.advantage-box h5, .advantage-box p {
+	padding-top: 10px;
+}
+
 #advantages .col-md-6:nth-child(n+3) {
 	padding-top: 40px;
 }
-
+.award {
+	font-size: 4em;
+	display: flex;
+	margin: 0 auto;
+	font-weight: 100; 
+}
 .item-tile {
 	/*padding-bottom: 60px;*/
 	display: inline-block;
@@ -225,16 +242,13 @@ div.advantage-expl > p{
 	font-size: 1.2em;
 	line-height: 2;
 }
-.content-middle {
-	background-color: #f1f1f1;
-}
+
 #advantage {
 	padding-bottom: 60px;
 }
-/** BOTTOM **/
+/** NEWS **/
 #bottom-content {
 	padding: 40px 0;
-
 }
 .bottom-box {
 	height: 250px;
@@ -261,7 +275,7 @@ div.advantage-expl > p{
 
 }
 /** TEAM **/
-#team {
+/*#team {
 	padding: 60px 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -330,16 +344,16 @@ div.advantage-expl > p{
 	background: url(../images/staff/chef.jpg) no-repeat;
 	background-position: center;
 	background-size: 10em auto;
-}
+}*/
 /** NEWS **/
-#news {
-	background-color: #f1f1f1;
+/*#news {
+	background-color: #fff;
 	padding: 60px 0;
 }
 #news h3 {
 	padding-bottom: 60px;
 }
-
+*/
 
 
 
@@ -499,10 +513,10 @@ div.scrollup:hover {
 	.caption button {
 		font-size: 1em;
 		padding: 4px;
-
 	}
+  	
   	#advantages .col-md-6:nth-child(n+2) {
 	padding-top: 60px;
-}
+	}
 
 }
