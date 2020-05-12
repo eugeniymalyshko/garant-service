@@ -10,7 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+
+
+<!-- 
+    <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script> -->
   </head>
 <body>
     <!-- Top Bar -->
@@ -55,387 +64,399 @@
 										<li class="sp-contact-email">
 											<span class="fa fa-envelope" aria-hidden="true"></span>
 												<a href="info@mail.com">info@mail.com</a>
-										</li>	
+										</li>
 									</ul>
 							</div>
 						</div> <!-- ./Contact information -->
 					</div>
 				</div>
-			</div> 
+			</div>
     </div> <!-- ./Top bar-->
-  <!-- Header -->
-  <header id="sp-header">
-      <div class="overlay"></div>
-    <div class="container">
-      <div class="container-inner">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg">
-            <!-- logo -->
-            <a class="logo" href="index.html">
-              <div class="navbar-brand mr-auto"></div>
-            </a>
-            <!-- Slogan -->
-            <div class="slogan">
-              <h5 class="d-none d-md-block">20 років бездоганного сервісу</h5>
+    <!-- Header -->
+    <header id="sp-header">
+            <div class="overlay"></div>
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- logo -->
+                        <a class="logo" href="index.html">
+                            <div class="navbar-brand mr-auto"></div>
+                        </a>
+                        <!-- Slogan -->
+                        <div class="slogan">
+                            <h5 class="d-none d-md-block">20 років бездоганного сервісу</h5>
+                        </div>
+                        <!-- Navbar Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                        </button>
+                        <!-- Links Header -->
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Головна</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Про компанію</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Галерея</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">меню</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">т</a>
+                                        <a class="dropdown-item" href="#"></a>
+                                        <a class="dropdown-item" href="#"></a>
+                                        <a class="dropdown-item" href="#"></a>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">звітність</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html">Контакти</a>
+                                </li>
+                            </ul> <!-- ./navbar-nav -->
+                        </div> <!-- ./navbarSupportedContent -->
+                    </nav>
+                </div>
             </div>
-            <!-- Navbar Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fas fa-bars"></span>
-            </button>
-            <!-- Links Header -->
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Головна</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Про компанію</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Галерея</a>
-                </li>
-                <li class="nav-item dropdown active">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Фуршет</a>
-                    <a class="dropdown-item" href="#">Банкет</a>
-                    <a class="dropdown-item" href="#">Кава-Брейк</a>
-                    <a class="dropdown-item" href="#">Барбекю</a>
-                  </div>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Новини</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Контакти</a>
-                </li>
-              </ul> <!-- ./navbar-nav -->
-            </div> <!-- ./navbarSupportedContent -->
-          </nav>
+        </div> <!-- ./container -->
+        <!-- Caption -->
+        <div class="caption text-center col-md-6">
+            <h1 class="d-none d-md-block">Lorem Ipsum</h1>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit beatae enim natus voluptatem aspernatur molestiae iusto cupiditate at facere delectus adipisci nam, illo autem minus nostrum, quidem maxime laborum sint.</p>
+            <button type="button" id="make-order" class="btn btn-outline-light btn-lg" style="margin-top: 5px;">Замовити Банкет</button>
         </div>
-      </div>
-    </div> <!-- ./container -->
-    <!-- Caption -->
-    <div class="caption text-center col-md-6">
-        <h1 class="d-none d-md-block">Lorem Ipsum</h1>
-      <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit beatae enim natus voluptatem aspernatur molestiae iusto cupiditate at facere delectus adipisci nam, illo autem minus nostrum, quidem maxime laborum sint.</p>
-      <button type="button" id="make-order" class="btn btn-outline-light btn-lg" style="margin-top: 5px;">Замовити Банкет</button>   
-    </div>
-  </header>
-  <!-- Service -->
-  <div class="cotnent-service">
-    <div class="container">
-        <h3 class="text-center title">Наші Послуги</h3>
-      <div class="row">
-        <!-- Banquet -->
-        <div class="col-md-6">
-          <div id="tile-1" class="service-box banquet">
-            <div class="block-overlay">
-                <h4 class="text-center">В нас ви можете замовити такі послуги:</h4>
-              <ul class="text-center">
-                <li>Банкет</li>
-                <li>Кава-Брейк</li>
-                <li>Коктейль</li>
-                <li>Барбекю</li>
-                <li>Пікнік</li>
-              </ul>
-              <a href="#">
-              <button type="button" id="make-order" class="btn btn-outline-dark btn-lg text-center">Докладнійше</button></a>
-            </div>
-              <span>Банкет</span>
-          </div>
-        </div>
-        <!-- Desserts -->
-        <div class="col-md-6">
-            <div id="tile-2" class="service-box desserts">
-              <div class="block-overlay">
-                  <h4 class="text-center">Кондитерські Вироби:</h4>
-                <ul class="text-center">
-                  <li>Десерт 1</li>
-                  <li>Десерт 2</li>
-                  <li>Десерт 3</li>
-                  <li>Десерт 4</li>
-                  <li>Десерт 5</li>
-                </ul>
-                <a href="#">
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
-              </div>
-              <span>Кондитерські Вироби</span>
-            </div>
-        </div>
-        <!-- Lunch Delivery -->
-        <div class="col-md-6">
-            <div id="title-3" class="service-box lunch">
-              <div class="block-overlay">
-                  <h4 class="text-center">Офісне Харчування:</h4>
-                <ul class="text-center">
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                </ul>
-                <a href="#">
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
-              </div>
-              <span>Офісне Харчування</span>
-            </div>
-        </div>
-        <!-- Board Food -->
-        <div class="col-md-6">
-          <div id="title-4" class="service-box board-food">
-              <div class="block-overlay">
-                 <h4 class="text-center">Бортове харчування:</h4>
-                <ul class="text-center">
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                </ul>
-                <a href="#">
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
-              </div>
-                <span>Бортове харчування</span>
-          </div>
-        </div>
-        <!-- Pizza & More -->
-        <div class="col-md-6">
-          <div id="title-4" class="service-box pizza">
-              <div class="block-overlay">
-                 <h4 class="text-center">Пироги та піцци:</h4>
-                <ul class="text-center">
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                  <li>lorem ipsum</li>
-                </ul>
-                <a href="#">
-                <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
-              </div>
-                <span>Пироги та піцци</span>
-          </div>
-        </div>
-        <!-- Semifinished Food -->
-        <div class="col-md-6">
-          <div id="title-4" class="service-box semifinished">
-            <div class="block-overlay">
-                <h4 class="text-center">Крафтові напівфабрикати:</h4>
-              <ul class="text-center">
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-              </ul>
-                <a href="#">
-                  <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button>
-                </a>
-            </div>
-              <span>Крафтові напівфабрикати</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- ./cotnent-service -->
-  <!-- Advantages -->
-  <div id="advantages">
-    <div class="container">
-        <h3 class="text-center title">Переваги</h3>
-        <p class="col-md-6 text-center ml-auto mr-auto">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, itaque!Lorem ipsum dolor sit amet.
-        </p>
-      <div class="row">
-        <!-- 1 -->
-        <div class="col-md-4 col-sm-12">
-          <div id="advantage-1" class="advantage-box text-center">
-              <span class="fas fa-award award"></span>
-            <h5>Lorem ipsum</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, itaque!Lorem ipsum dolor sit amet.
-            </p>  
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="col-md-4 col-sm-12">
-          <div id="advantage-2" class="advantage-box text-center">
-              <span class="fas fa-sync-alt award"></span>
-            <h5>Lorem ipsum</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, itaque!Lorem ipsum dolor sit amet.
-            </p>  
+    </header>
+    <!-- Advantages -->
+    <div id="advantages">
+        <div class="container">
+            <h4 class="text-center title">Переваги</h4>
+            <p class="col-md-6 text-center ml-auto mr-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+            itaque!Lorem ipsum dolor sit amet.
             </p>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="col-md-4">
-          <div id="advantage-3" class="advantage-box text-center">
-              <span class="fas fa-concierge-bell award"></span>
-            <h5>Lorem ipsum</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, itaque!Lorem ipsum dolor sit amet.
-            </p>  
-          </div>
-        </div>
-      </div> 
-    </div> 
-  </div> 
-  <!-- Team -->
-  <!-- <div id="team"> 
-    <div class="container ">
-        <h3 class="text-center title">Команда Гарант-Сервіс</h3>
-      <div id="" class="row">
-        <div class="col-md-3"> 
-          <div class="staff-name">
-              <div id="staff-1" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-2" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div> 
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-3" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-            <div id="staff-4" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>  
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-2" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-6" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div> 
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-7" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>  
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-        <div class="col-md-3">
-          <div class="staff-name">
-              <div id="staff-8" class="staff-box"></div>
-            <span><h6>Lorem Ipsum</h6></span>
-          </div>
-          <div class="post text-center"><h5>Шеф-кухар</h5></div>
-        </div>
-      </div>
-    </div>
-  </div>   --><!-- ./Team --> 
-  <!-- News -->
-  <!-- <div id="news">
-    <div class="container">
-        <h3 class="text-center title">Новини</h3>
-      <div id="" class="row">
-        <div class="col-md-3">
-          <a href="#"><div id="news-1" class="bottom-box">
-            <span>Lorem ipsum</span></div>
-          </a>
-          <a class="linc-to-news" href="#"><span>Всі новини</span></a>
-        </div>
-        <div class="col-md-3">
-          <a href="#"><div id="news-2" class="bottom-box">
-            <span>Lorem ipsum</span></div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#"><div id="news-2" class="bottom-box">
-            <span>Lorem ipsum</span></div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <div id="news-1" class="bottom-box">
-              <span>Lorem ipsum</span>
+            <div class="row">
+                <!-- Advantage-1 -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="container">
+                        <div id="advantage-1" class="advantage-box text-center">
+                            <span class="far fa-calendar-alt award"></span>
+                            <h5>Lorem ipsum</h5>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                            itaque!Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Advantage-2 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="container">
+                    <div id="advantage-2" class="advantage-box text-center">
+                        <span class="far fa-calendar-alt award"></span>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                            itaque!Lorem ipsum dolor sit amet.
+                        </p>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </a>
+            <!-- Advantage-3 -->
+            <div class="col-md-4">
+                <div class="container">
+                    <div id="advantage-3" class="advantage-box text-center">
+                        <span class="far fa-calendar-alt award"></span>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                            itaque!Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>  --><!-- ./News -->
-  <!--  -->
-  <div id="bottom-content">
-    <bottom>
-      <div class="container">
-        <div id="" class="row">
-          <div class="col-md-4">
-            <a href="#"><div id="tile-1" class="bottom-box">
-              <span>Lorem ipsum</span></div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><div id="tile-2" class="bottom-box">
-              <span>Lorem ipsum</span></div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://goo.gl/maps/uvUw6tS5yVmxdSTf8" target="_blank">
-              <div id="map-tile" class="bottom-box">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7005967382293!2d30.534219115731275!3d50.44667727947484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfacdfced29d%3A0x7f76a5a2ee19f071!2sHromads%CA%B9ke%20Kafe%20Tov%20%22Harant-Servis%22!5e0!3m2!1sru!2sua!4v1587304962134!5m2!1sru!2sua" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                  <span>Наше місцезнаходженя</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </bottom>
-  </div>
-  <footer id="pannel-footer">
-    <div class="container">
-      <div class="container-inner">
+</div>
+<!-- Service -->
+<div id="service">
+    <div class="container main-service">
+            <h4 class="text-center title">Наші Послуги</h4>
         <div class="row">
-          <section id="sp-footer" class="col-lg-4">
-            <div class="sp-column">
-              <span class="copyrite">&copy 2020 Гарант-Сервіс</span>
+            <!-- Banquet -->
+            <div class="col-md-4">
+                <div class="service-box banquet">
+                    <div class="block-overlay">
+                        <h4 class="text-center">В нас ви можете замовити такі послуги:</h4>
+                        <ul class="text-center">
+                            <li>Банкет</li>
+                            <li>Кава-Брейк</li>
+                            <li>Коктейль</li>
+                            <li>Барбекю</li>
+                            <li>Пікнік</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg text-center">Докладнійше</button></a>
+                    </div>
+                    <span>Банкет</span>
+                </div>
             </div>
-          </section>
-          <section id="sp-footer" class="col-lg-4">
-            <div class="sp-column">
-              <a class="reports" href="#">Звітність</a>
+            <!-- Desserts -->
+            <div class="col-md-4">
+                <div class="service-box desserts">
+                    <div class="block-overlay">
+                        <h4 class="text-center">Кондитерські Вироби:</h4>
+                        <ul class="text-center">
+                            <li>Десерт 1</li>
+                            <li>Десерт 2</li>
+                            <li>Десерт 3</li>
+                            <li>Десерт 4</li>
+                            <li>Десерт 5</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
+                    </div>
+                    <span>Кондитерські Вироби</span>
+                </div>
             </div>
-          </section>
-          <section id="sp-footer" class="col-lg-4">
-            <div class="sp-column">
-              <button type="button" id="make-order" class="btn btn-outline-light btn-lg">Залишити заявку</button>
+            <!-- Lunch Delivery -->
+            <div class="col-md-4">
+                <div class="service-box lunch">
+                    <div class="block-overlay">
+                        <h4 class="text-center">Офісне Харчування:</h4>
+                        <ul class="text-center">
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
+                    </div>
+                    <span>Офісне Харчування</span>
+                </div>
             </div>
-          </section>
+            <!-- Board Food -->
+            <div class="col-md-4">
+                <div class="service-box board-food">
+                    <div class="block-overlay">
+                        <h4 class="text-center">Бортове харчування:</h4>
+                        <ul class="text-center">
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
+                    </div>
+                    <span>Бортове харчування</span>
+                </div>
+            </div>
+            <!-- Pizza & More -->
+            <div class="col-md-4">
+                <div class="service-box pizza">
+                    <div class="block-overlay">
+                        <h4 class="text-center">Пироги та піцци:</h4>
+                        <ul class="text-center">
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button></a>
+                    </div>
+                    <span>Пироги та піцци</span>
+                </div>
+            </div>
+            <!-- Semifinished Food -->
+            <div class="col-md-4">
+                <div class="service-box semifinished">
+                    <div class="block-overlay">
+                        <h4 class="text-center">Крафтові напівфабрикати:</h4>
+                        <ul class="text-center">
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                        </ul>
+                        <a href="#">
+                            <button type="button" id="make-order" class="btn btn-outline-dark btn-lg">Докладнійше</button>
+                        </a>
+                    </div>
+                    <span>Крафтові напівфабрикати</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
-  <!-- Go to Top -->
-  <div class="scrollup">
-    <!-- Иконка fa-chevron-up (Font Awesome) -->
-    <i class="fa fa-chevron-up"></i>
-  </div>
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
-  <script type="text/javascript" src="js/script.js"></script>
+</div> <!-- ./cotnent-service -->
+    <!-- Locations -->
+    <div id="locations">
+        <div class="container ">
+                <h5 class="text-center title">Локації для заходів</h5>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <div id="location-1" class="locations-box">
+                            <span>Локація 1</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div id="location-2" class="locations-box">
+                            <span>Локація 2</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div id="location-3" class="locations-box">
+                            <span>Локація 3</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div id="location-4" class="locations-box">
+                            <span>Локація 4</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./locations -->
+    <div id="feedbacks">
+        <div class="container">
+                <h5 class="title text-center">Відгуки</h5>
+                <div class="row">
+                    <div id="testimonials">
+                        <div class="container">
+                            <div class="block-one-example">
+                                <div id="customNav" class="owl-my-nav"></div>
+                                <div class="owl-carousel block-items">
+                                    <div class="item">
+                                        <div class="inner-testimonial">
+                                            <img src="images/feedback/for-demo/bg2.jpg" class="full-opacity" alt="Клиент 1">
+                                            <h3 class="city-name">Іван </h3>
+                                            <p class="text-testimonial">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="inner-testimonial">
+                                            <img src="images/feedback/client2.png" class="full-opacity" alt="Клиент 2">
+                                            <h3 class="city-name">Світлана</h3>
+                                            <p class="text-testimonial">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="inner-testimonial">
+                                            <img src="images/feedback/client3.png" class="full-opacity" alt="Клиент 3">
+                                            <h3 class="city-name">Олександр</h3>
+                                            <p class="text-testimonial">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .block-one-example -->
+                        </div>      
+                    </div>
+
+                 
+
+
+
+                    <!-- <div class="col-md-4">
+                        <section class="feedback">
+                            <h5 class="title text-center">Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequuntur, voluptatem deleniti officiis sed pariatur. Et, beatae quas dolorem quam aliquam, ipsum fuga amet, possimus, animi placeat ipsa dolor facilis!</p> -->
+                        </section>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <section class="contact-inform">
+                                <h5 class="text-center title">Контактна інформація</h5>
+                                <p>
+                                    Місцезнаходження: 01001, м. Київ, вул. Lorem Ipsum, 1<br>
+                                    Поштова адреса: Україна, 01001, м. Київ Lorem Ipsum, 1<br>
+                                    +38-(066)-123-45-67 <br>info@mail.com
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="service-footer">
+                                <h5 class="text-center title">Послуги</h5>
+                                    <ul>
+                                        <li><a href="#">Фуршет</a></li>
+                                        <li><a href="#">Банкет</a></li>
+                                        <li><a href="#">Кава-Брейк</a></li>
+                                        <li><a href="#">Барбекю</a></li>
+                                    </ul>
+                                    
+                                    
+                                    
+                                    
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="map">
+                                <h5 class="text-center title">Прокласти маршрут</h5>
+                                <a >
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7005967382293!2d30.534219115731275!3d50.44667727947484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfacdfced29d%3A0x7f76a5a2ee19f071!2sHromads%CA%B9ke%20Kafe%20Tov%20%22Harant-Servis%22!5e0!3m2!1sru!2sua!4v1589196056852!5m2!1sru!2sua" width="350" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright-box">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="row">
+                        <div class="copyright mr-auto">
+                            <span>&copy 2020 Гарант-Сервіс. Всі права захищено.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <!-- Go to Top -->
+    <div class="scrollup">
+        <!-- Иконка fa-chevron-up (Font Awesome) -->
+        <i class="fa fa-chevron-up"></i>
+    </div>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -2,9 +2,13 @@ body {
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
 	color: #000;
+	font-size: 16px;
 }
 .title {
 	text-transform: uppercase;
+}
+li {
+	list-style: none;
 }
 /** TOP BAR **/
 #top-bar {
@@ -48,7 +52,7 @@ body {
 	position: relative;
 	width: 100%;
 	z-index: 99;
-	height: 100vh;
+	height: 600px;
 }
 .overlay {
 	position: absolute;
@@ -98,14 +102,17 @@ body {
 .navbar-nav li a {
 	transition: 0.4s;
 	color: #fff;
-	border-radius: 0.4rem; 
+	border-radius: 0.4rem;
 
 }
 .navbar-nav li > a:hover {
 	transition: 0.3s;
 	color: #000;
 	background: #f8f9fa;
-	border-radius: 0.4rem; 
+	border-radius: 0.4rem;
+}
+.navbar-nav li .dropdown-menu a {
+	/*color: #000;*/
 }
 .caption {
 	text-align: center;
@@ -114,16 +121,65 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-/** SERVICE **/
-.cotnent-service h3 {
+/** ADVANTAGES **/
+#advantages {
+	background: #fff;
+	/*padding-top: 30px;*/
+	padding-bottom:70px;
+
+}
+#advantages h4 {
+	padding-top: 45px;
+}
+.advantage-box {
+	padding-top: 70px;
+	margin-top: 30px;
+}
+.advantage-box h5, .advantage-box p {
+	padding-top: 10px;
+}
+
+#advantages .col-md-6:nth-child(n+3) {
 	padding-top: 40px;
 }
+.award {
+	font-size: 4em;
+	display: flex;
+	margin: 0 auto;
+	font-weight: 100;
+}
+.item-tile {
+	/*padding-bottom: 60px;*/
+	display: inline-block;
+	/*margin: 20px 0 20px;*/
+}
+div.advantage-expl > p{
+	font-size: 1.2em;
+	line-height: 2;
+}
+/** SERVICE **/
+.main-service {
+	padding-top: 20px;
+}
+.serv-holder {
+	padding-top: 20px;
+}
+#service {
+	background-color: #f1f1f1;
+	padding-bottom: 80px;
+}
+#service .col-md-4:nth-child(n+4) {
+	padding-top: 20px;
+}
+#service h4 {
+	padding-top: 15px;
+}
 .service-box {
-	height: 400px;
+	height: 300px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .service-box span {
 	position: absolute;
@@ -201,67 +257,26 @@ body {
 	background-size: cover;
 	background-position: center;
 }
-/** ADVANTAGES **/
-#advantages {
-	background: #f1f1f1;
-	margin-top: 80px;
+/** LOCATIONS **/
+#locations {
+	background-color: #fff;
+	padding-bottom: 40px;
 }
-#advantages h3 {
-	padding-top: 80px;
+#locations h5 {
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.advantage-box {
-	max-width: 90%;
-	
-	margin-top: 30px;
-	padding-bottom: 80px;
-}
-.advantage-box h5, .advantage-box p {
-	padding-top: 10px;
-}
-
-#advantages .col-md-6:nth-child(n+3) {
-	padding-top: 40px;
-}
-.award {
-	font-size: 4em;
-	display: flex;
-	margin: 0 auto;
-	font-weight: 100; 
-}
-.item-tile {
-	/*padding-bottom: 60px;*/
-	display: inline-block;
-	/*margin: 20px 0 20px;*/
-}
-/*.item-logo > img {
-	position: relative;
-	width: 500px;
-	height: 300px;*/
-}
-div.advantage-expl > p{
-	font-size: 1.2em;
-	line-height: 2;
-}
-
-#advantage {
-	padding-bottom: 60px;
-}
-/** NEWS **/
-#bottom-content {
-	padding: 40px 0;
-}
-.bottom-box {
+.locations-box {
 	height: 250px;
 	width: 100%;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 45px;
 	position: relative;
 	border: 1px solid #3f1c0f;
 	overflow: hidden;
 }
-.bottom-box:hover {
-	box-shadow: 0 1px 5px 1px #cccccc;
-}
-.bottom-box span {
+.locations-box span {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -272,141 +287,138 @@ div.advantage-expl > p{
 	background-color: #000;
 	color: #fff;
 	opacity: .7;
-
 }
-/** TEAM **/
-/*#team {
-	padding: 60px 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-#team div > h3 {
-	padding-bottom: 60px;
-}
-#team .staff-name span {
-	display: block;
-	padding-top: 5px;
-	text-align: center;
-}
-.staff-box {
-	height: 10em;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.post h5 {
-	margin-bottom: 60px;
-
-}
-
-#staff-1 {
-	background: url(../images/staff/chef.jpg) no-repeat;
+#location-1 {
+	background: url("../images/locations/location-1.jpg");
+	background-size: cover;
 	background-position: center;
-	background-size: 10em auto;
-
 }
-#staff-2 {
-	background: url(../images/staff/chef.jpg) no-repeat;
+#location-2 {
+	background: url("../images/locations/location-2.jpg");
+	background-size: cover;
 	background-position: center;
-	background-size: 10em auto;
-
 }
-#staff-3 {
-	background: url(../images/staff/chef.jpg) no-repeat;
+#location-3 {
+	background: url("../images/locations/location-3.jpg");
+	background-size: cover;
 	background-position: center;
-	background-size: 10em auto;
-
 }
-#staff-4 {
-	background: url(../images/staff/chef.jpg) no-repeat;
+#location-4 {
+	background: url("../images/locations/location-4.jpg");
+	background-size: cover;
 	background-position: center;
-	background-size: 10em auto;
-
 }
-#staff-5 {
-	background: url(../images/staff/chef.jpg) no-repeat;
-	background-position: center;
-	background-size: 10em auto;
-
-}
-#staff-6 {
-	background: url(../images/staff/chef.jpg) no-repeat;
-	background-position: center;
-	background-size: 10em auto;
-
-} 
-#staff-7{
-	background: url(../images/staff/chef.jpg) no-repeat;
-	background-position: center;
-	background-size: 10em auto;
-
-} 
-#staff-8 {
-	background: url(../images/staff/chef.jpg) no-repeat;
-	background-position: center;
-	background-size: 10em auto;
-}*/
-/** NEWS **/
-/*#news {
+/** FEEDBACKS **/
+#feedbacks {
 	background-color: #fff;
-	padding: 60px 0;
+
 }
-#news h3 {
-	padding-bottom: 60px;
-}
-*/
-
-
-
-
-/*.team{
-	margin: 0em 0;
+.block-one-example {
+	margin:30px 0;
 	position: relative;
-
 }
-.team h1{
-	color:#F97300;
-	margin: 2em;	
-}
-.team .item{
-	position: relative;
-	overflow: hidden;	
-}
-.team .des{
-	background: #F97300;
-	color: #fff;
+.inner-testimonial {
 	text-align: center;
-	border-top-right-radius: 93%;
-	transition:.3s ease-in-out;
+	background-color: #fff;
+}
+
+.inner-testimonial > img{
+	max-width: 128px;
+	margin:0 auto 15px;
+	opacity: 0;
+	-webkit-transition:all 1.3s linear;
+	transition:all 1.3s linear;
+}
+h3.city-name {
+	padding:10px 0;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}
+.text-testimonial {
+	padding:10px 0;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 25px;
+}
+.block-items {
+	cursor: default;
+}
+/*Изменяем внешний вид элементов управления (точки) */
+.owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+	width: 14px;
+	height: 14px;
+}
+
+/*Стрелки*/
+.owl-my-nav {
 	position: absolute;
-	width: 88%;
-	bottom: 24px;
-
-
-}
-.team .item:hover .des{
+	width: 100%;
 	height: 100%;
-	background:#f973007d;
-    position: absolute;
-	width: 89%;
-	padding: 5em;
-	top: 0;
-	border-top-right-radius: 0;
+}
+.owl-my-nav .owl-prev,
+.owl-my-nav .owl-next {
+	position: absolute;
+	width: 60px;
+	top:34%;
+	font-size: 100px;
+	z-index: 20;
+	cursor:pointer;
+	opacity: 0.5;
+	-webkit-transition:opacity .3s ease;
+	transition:opacity .3s ease;
 }
 
-*/
-/** BOTTOM **/
-#bottom-content {
-	background: #fff;
+.owl-my-nav .owl-prev:hover,
+.owl-my-nav .owl-next:hover{
+	opacity: 0.8;
 }
+
+.owl-my-nav .owl-prev {
+	left: 50px;
+}
+
+.owl-my-nav .owl-next {
+	right: 50px;
+	text-align: right;
+}
+
+
+
 
 /** FOOTER **/
-#pannel-footer {
+.footer-top {
+	background-color: #f1f1f1;
+	padding-bottom: 40px;
+}
+.footer-top  h5 {
+	padding-top: 60px;
+}
+.footer-top  p {
+	padding: 10px 0;
+}
+.service-footer ul {
+	padding-top: 10px;
+}
+.service-footer li a {
+	text-decoration: none;
+	color: #000;
+}
+.copyright-box {
 	background-color: #141414;
 	color: #fff;
 	font-size: 14px;
-	padding: 0;
-
-}	
+}
+.copyright {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
 #pannel-footer .container-inner {
 	padding: 30px 0;
 	border-top: 1px solid rgba(255, 255, 255, .1);
@@ -416,13 +428,14 @@ a.reports, a.reports:hover {
 	color: #fff;
 
 }
+/** GO TO TOP **/
 
 div.scrollup {
 	  position: fixed; /* фиксированная позиция */
 	  color: #fff; /* цвет текста */
 	  background-color: rgb(152 152 152); /* цвет заднего фона */
 	  right: 20px; /* расстояние от правого края */
-	  bottom: 30px; /* расстояние от нижнего края */
+	  bottom: 20px; /* расстояние от нижнего края */
 	  padding: 4px 10px; /* отступы до содержимого блока */
 	  font-size: 20px; /* размер шрифта (иконки) */
 	  border-radius: 4px; /* скругление верхнего левого угла */
@@ -433,15 +446,16 @@ div.scrollup {
 div.scrollup:hover {
   background-color:rgb(50 50 50); /* цвет заднего фона при наведении */
 }
-/** MAIN CONTENT **/
+
+
+
+
 @media (min-width:1200px) {
 	.slogan h4 {
 	margin: auto 0 auto 100px;
 	}
- 
+
 }
-
-
 
 /*********** Tablet version ***********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -468,10 +482,10 @@ div.scrollup:hover {
 
 
 }
-	
+
 /*********** Mobile version ***********/
 @media (max-width: 767px) {
-	
+
 	.sp-social-icons {
 		font-size: 140%;
 	}
@@ -514,9 +528,29 @@ div.scrollup:hover {
 		font-size: 1em;
 		padding: 4px;
 	}
-  	
+
   	#advantages .col-md-6:nth-child(n+2) {
 	padding-top: 60px;
 	}
+
+	/*p*/.text-testimonial {
+		font-size: 14px;
+	}
+
+	.owl-my-nav .owl-prev,
+	.owl-my-nav .owl-next{
+		font-size: 50px;
+	}
+
+	.owl-my-nav .owl-prev {
+		left: 10px;
+	}
+
+	.owl-my-nav .owl-next {
+		right: 10px;
+	}
+
+
+
 
 }
