@@ -58,7 +58,7 @@ $(document).ready(function() {
     items: 1,
     margin:130,
     autoplay:true,
-      autoplayTimeout:1500,
+      autoplayTimeout:5600,
       autoplayHoverPause:true,
     stagePadding: 130,
     dots: false,

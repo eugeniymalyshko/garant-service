@@ -400,11 +400,12 @@ h3.city-name {
 .footer-top  h5 {
 	padding-top: 60px;
 }
-.footer-top  p {
-	padding: 10px 0;
+.footer-top  li {
+	padding: 5px 0;
 }
 .service-footer ul {
 	padding-top: 10px;
+	padding-left: 0;
 }
 .service-footer li a {
 	text-decoration: none;
