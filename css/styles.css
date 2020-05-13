@@ -1,41 +1,36 @@
 body {
 	background-color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #000;
 	font-size: 16px;
 }
 .title {
 	text-transform: uppercase;
 }
+p {
+	font-family: 'Roboto Condensed', sans-serif;
+}
 li {
 	list-style: none;
 }
-/** TOP BAR **/
-#top-bar {
-	background-color: #141414;
-	font-size: 0.875rem;
-	padding: 8px 0;
-}
-#top-bar a {
-	color: #fff;
-}
-.sp-social-icons {
-	list-style: none;
-	display: inline-block;
-	padding: 0;
-	margin:  -5px;
-	font-size: 110%;
-}
-.sp-social-icons > li {
-	display: inline-block;
-	margin: 5px 8px;
-	white-space: nowrap;
+/** HEADER **/
+#sp-header {
+	background: url(../images/main-pic/2000.jpg); no-repeat;
+	background-size: cover;
+	background-position:  center;
+	background-color: #f1f1f1;
+	position: relative;
+	width: 100%;
+	z-index: 99;
+	height: 100vh;
 }
 .sp-contact-info {
 	list-style: none;
-	padding: 0;
-	margin: 0 -10px;
 	color: #fff;
+	font-size: 0.9em;
+	margin-top: 8px;
+	padding: 0;
+	margin-bottom: 0;
 }
 .sp-contact-info li {
 	display: inline-block;
@@ -43,57 +38,44 @@ li {
 	font-size: 91%;
 	white-space: nowrap;
 }
-/** HEADER **/
-#sp-header {
-	background: url(../images/jumbotron/jumbotron-2000-px.jpg); no-repeat;
-	background-size: cover;
-	background-position:  center;
-	background-color: #f1f1f1;
-	position: relative;
-	width: 100%;
-	z-index: 99;
-	height: 600px;
+.sp-contact-info li a {
+	color: #fff;
 }
 .overlay {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: #000;
-	opacity: 0.2;
+	background: rgba(10, 10, 10, 0.3);
 	min-width: 100%;
 	min-height: 100%;
 }
 .navbar  {
 	width: 100%;
 }
-.navbar-toggler {
-	padding-top: -15px;
-	font-weight: 100;
-}
 .navbar-brand {
 	background: url(../images/Logo_garant-1000x1000px.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-	width: 75px;
-	height: 75px;
+	width: 65px;
+	height: 65px;
 }
-.slogan > h5 {
+.slogan h6 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1.8px;
+	line-height: 1.3;
+	color: #fff;
+	margin-left: 20px;
+}
+.navbar-toggler {
+	padding-top: -15px;
 	font-weight: 100;
-	color: #fff;
-	margin: 5px 0 0 20px;
-}
- #sp-header .fas  {
-	color: #fff;
-	font-size: 1.2em;
-	padding: 1px;
-}
-#sp-header .navbar-toggler {
 	border: solid 1px #fff;
 	margin-top: -5px;
 }
-#navbarSupportedContent, .navbar-nav {
-	margin-right: -5px;
-	margin-top: 5px;
+ .navbar-toggler .fas  {
+	color: #fff;
+	font-size: 1.2em;
+	padding: 1px;
 }
 .navbar-nav li {
 	text-transform: uppercase;
@@ -103,26 +85,27 @@ li {
 	transition: 0.4s;
 	color: #fff;
 	border-radius: 0.4rem;
-
 }
-.navbar-nav li > a:hover {
+.navbar-nav li a:hover {
 	transition: 0.3s;
 	color: #000;
 	background: #f8f9fa;
 	border-radius: 0.4rem;
 }
-.navbar-nav li .dropdown-menu a {
-	/*color: #000;*/
-}
 .caption {
 	color: #fff;
-	top: 11em;
-	/*left: 5em;*/
+	top: 12em;
 }
 .caption p {
-	line-height: 2;
-	font-size: 14px;
+	letter-spacing: 0.5px;
 }
+.caption button {
+	background-color: rgb(30, 144, 255);
+}
+
+
+
+
 	
 /** ADVANTAGES **/
 #advantages {
@@ -432,6 +415,21 @@ a.reports, a.reports:hover {
 	color: #fff;
 
 }
+
+
+.sp-social-icons {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin:  -5px;
+
+}
+
+.sp-social-icons > li {
+	display: inline-block;
+	margin: 5px 8px;
+	white-space: nowrap;
+}
 /** GO TO TOP **/
 
 div.scrollup {
@@ -454,90 +452,83 @@ div.scrollup:hover {
 
 
 
-@media (min-width:1200px) {
+@media screen and (min-width:1200px) {
 	.slogan h4 {
-	margin: auto 0 auto 100px;
+	/*margin: auto 0 auto 100px;*/
 	}
 
 }
 
-/*********** Tablet version ***********/
-@media (min-width: 768px) and (max-width: 991px) {
-	.sp-social-icons {
-		font-size: 110%;
-	}
-	.navbar-nav {
-		background-color: #fff;
-	}
-	li.nav-item-active .nav-link {
-		color: #fff;
-	}
-	ul.navbar-nav {
-		text-align: center;
-  		margin: 10px auto;
-  		font-size: 1.3em;
-  	}
-	.slogan > h4 {
-  		font-size: 1.3em;
-  	}
-  	.slogan h4 {
-	margin: auto 0;
-	}
-
-
-}
-
-/*********** Mobile version ***********/
-@media (max-width: 767px) {
-
-	.sp-social-icons {
-		font-size: 140%;
-	}
-	.navbar-dark .navbar-nav .active > .nav-link {
-		color: #fff;
-	}
+@media screen and (max-width: 991px) {
 	.navbar-nav {
 		background-color: #000;
 		opacity: 0.8;
 		height: 100%;
 		z-index: 99;
-	}
-	.navbar-nav li > a {
+	}	
+  	.navbar-nav li > a {
 		text-align: center;
-  		margin: 10px auto;
-  		font-size: 1.3em;
+  		margin: 5px 0;
   	}
-  	ul.navbar-nav > li {
-  		padding-top: 5px;
+	.slogan {
+  		margin-right: auto;
   	}
-  	#sp-header {
-  		background: url(../images/jumbotron/jumbotron-1200-px.jpg) no-repeat;
-		height: 190px;
-		background-size: cover;
-		background-position:  center;
-		box-sizing: border-box;
-	}
-  	.navbar-brand {
-	width: 60px;
-	height: 60px;
-	padding-top: 20px;
-	}
-	.logo {
-		top: 0.1em;
-	}
-	.caption {
-		top: 1em;
+  	.caption {
+		top: 20em;
 	}
 	.caption button {
 		font-size: 1em;
+		margin-top: 15px;
 		padding: 4px;
+		font-weight: bold;
+		background-color: pink;
+
+	}
+	
+  	.sp-social-icons {
+		font-size: 110%;
 	}
 
+}
+
+/********* Tablet version *********/
+@media screen and (max-width: 767px) {
+	#sp-header {
+  		background: url(../images/main-pic/1200px.jpg) no-repeat;
+  		background-size: cover;
+		background-position:  center;
+  	}
+	.navbar-nav {
+		background-color: #000;
+  		padding-top: 5px;
+		opacity: 0.8;
+		z-index: 99;
+	}
+	.navbar-nav li > a {
+		text-align: center;
+  		margin: 5px 0;
+  	}
+    .navbar-brand {
+	width: 55px;
+	height: 55px;
+	}
+	.caption {
+	top: 5em;
+	}
+	.caption button {
+		font-size: 1em;
+		margin-top: 15px;
+		padding: 4px;
+		font-weight: bold;
+		background-color: green;
+
+	}
+	
   	#advantages .col-md-6:nth-child(n+2) {
 	padding-top: 60px;
 	}
 
-	/*p*/.text-testimonial {
+	.text-testimonial {
 		font-size: 14px;
 	}
 
@@ -553,8 +544,74 @@ div.scrollup:hover {
 	.owl-my-nav .owl-next {
 		right: 10px;
 	}
+	.sp-social-icons {
+		font-size: 140%;
+	}
+/********** Mobile version **********/
+@media screen and (max-width: 480px) {
+	#sp-header {
+  		background: url(../images/main-pic/1200px.jpg) no-repeat;
+  		background-size: cover;
+		background-position:  center;
+  	}	
+  	.navbar-brand {
+	width: 55px;
+	height: 55px;
+	}
+	.navbar-nav {
+		background-color: #000;
+		opacity: 0.8;
+  		padding-top: 5px;
+		z-index: 99;							
+	}
+	.navbar-nav li > a {
+		text-align: center;
+  		margin: 5px 0;
+  	}
+  	.navbar-nav {
+  	}
+  	.caption {
+		top: 12em;
+	}
+	.caption button {
+		font-size: 1em;
+		margin-top: 15px;
+		padding: 4px;
+		font-weight: bold;
+		background-color: red;
+	}
+	
 
 
 
+
+  	#advantages .col-md-6:nth-child(n+2) {
+	padding-top: 60px;
+	}
+
+	/*.text-testimonial {
+		font-size: 14px;
+	}
+
+	.owl-my-nav .owl-prev,
+	.owl-my-nav .owl-next{
+		font-size: 50px;
+	}
+
+	.owl-my-nav .owl-prev {
+		left: 10px;
+	}
+
+	.owl-my-nav .owl-next {
+		right: 10px;
+	}
+*/
+	.sp-social-icons {
+		/*font-size: 140%;*/
+	}
 
 }
+
+
+
+
