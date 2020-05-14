@@ -88,7 +88,7 @@ li {
 .navbar-nav li a:hover {
 	transition: 0.3s;
 	color: #000;
-	background: #f8f9fa;
+	background: #A6754B;
 	border-radius: 0.4em;
 }
 .caption {
@@ -101,7 +101,11 @@ li {
 	letter-spacing: 0.5px;
 }
 .caption button {
-	background-color: rgb(30, 144, 255);
+	background-color: #577356;
+	border: 0;
+}
+.caption button:hover {
+	background-color: #A6754B;
 }
 /*********** CHECKED ***************/
 
@@ -110,17 +114,14 @@ li {
 	
 /** ADVANTAGES **/
 #advantages {
-	background: #fff;
-	/*padding-top: 30px;*/
 	padding-bottom:70px;
 
 }
 #advantages h4 {
 	padding-top: 45px;
 }
-.advantage-box {
-	padding-top: 70px;
-	margin-top: 30px;
+.advantage-2, .advantage-4 {
+	margin-left: auto;
 }
 .advantage-box h5, .advantage-box p {
 	padding-top: 10px;
@@ -128,12 +129,6 @@ li {
 
 #advantages .col-md-6:nth-child(n+3) {
 	padding-top: 40px;
-}
-.award {
-	font-size: 4em;
-	display: flex;
-	margin: 0 auto;
-	font-weight: 100;
 }
 .item-tile {
 	/*padding-bottom: 60px;*/
@@ -387,8 +382,22 @@ h3.city-name {
 #footer-list-chart h5 {
 	padding-top: 60px;
 }
-#footer-list-chart  li {
+#footer-list-chart li {
 	padding: 5px 0;
+	color: #fff;
+	transition: 0.4s;
+
+}
+#footer-list-chart a, .more-lists {
+	padding: 5px;
+	transition: 0.4s;
+
+}
+#footer-list-chart a:hover, .more-lists:hover {
+	color: #fff;
+	transition: 0.4s;
+	background-color: #A6754B;
+	border-radius: 0.4em; 
 }
 .footer-service ul {
 	padding-top: 10px;
@@ -397,6 +406,16 @@ h3.city-name {
 .footer-service li a {
 	text-decoration: none;
 	color: #000;
+}
+
+
+.hidden-list {
+	display: none;
+}
+.more-lists {
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px 0;
 }
 
 #footer-bottom {
@@ -419,13 +438,13 @@ a.reports, a.reports:hover {
 
 }
 
-.social-icons {
+.sp-social-icons {
 	padding: 0;
 	margin: -5px -10px;
 }
 
 
-.social-icons > li {
+.sp-social-icons > li {
 	display: inline-block;
 	margin: auto 8px;
 	font-size: 1.5em;
@@ -473,11 +492,10 @@ div.scrollup:hover {
   		margin-right: auto;
   	}
   	.caption {
-		top: 20em;
+		top: 23em;
 	}
 	.caption button {
 		font-size: 1em;
-		margin-top: 15px;
 		padding: 4px;
 		font-weight: bold;
 		background-color: pink;
@@ -524,6 +542,14 @@ div.scrollup:hover {
 		font-weight: bold;
 		background-color: green;
 	}
+	#footer-list-chart:first-child {
+		padding-top: 20px;
+	}
+	#footer-list-chart h5 {
+		padding: 5px 0;
+		margin-bottom: 5px;
+	}
+	
 /************ CHECKED ************/
 
 
@@ -620,9 +646,23 @@ div.scrollup:hover {
 	div.scrollup {
 	   bottom: 5em; /* расстояние от нижнего края */
 	}
-	.social-icons {
-		margin-top: 5px;
+	.sp-social-icons {
+
 	}
+	.sp-1 {
+		margin-top: 20px;
+	}
+	.sp-2 {
+		margin-top: -50px;
+	}
+
+	#footer-list-chart  {
+		padding: 5px 0;
+	}
+	#footer-list-chart:first-child {
+		padding-top: 20px;
+	}
+	
 }
 
 

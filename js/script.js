@@ -81,3 +81,45 @@ $(document).ready(function() {
     }
   });
 });
+
+$('.more-lists').on('click', function() {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active').text('Більше...');
+    $(this).closest('.footer-service').find('ul li.hidden-list').slideUp();
+  }
+  else {
+    $(this).addClass('active').text('Згорнути...');
+    $(this).closest('.footer-service').find('ul li.hidden-list').slideDown();
+  }
+});
+
+
+// Links to services in mobile view
+$(function() {
+  var screenWidth = window.innerWidth;
+  if (screenWidth < 768) {
+    $('.service-sm').on('click', function() {
+      location.href = 'https://ukr.net';
+      });
+      
+    $('.banquet-sm').on('click', function() {
+      location.href = '#';
+      });
+      
+    $('.catering-sm').on('click', function() {
+      location.href = '#';
+      });
+      
+    $('.categories-sm').on('click', function() {
+      location.href = '#';
+      });
+  }
+});
+
+
+
+
+
+
+
+
