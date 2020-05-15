@@ -88,7 +88,7 @@ li {
 .navbar-nav li a:hover {
 	transition: 0.3s;
 	color: #000;
-	background: #A6754B;
+	background: #F2B705;
 	border-radius: 0.4em;
 }
 .caption {
@@ -105,7 +105,7 @@ li {
 	border: 0;
 }
 .caption button:hover {
-	background-color: #A6754B;
+	background-color: #F2B705;
 }
 /*********** CHECKED ***************/
 
@@ -121,7 +121,7 @@ li {
 	padding-top: 45px;
 }
 .advantage-2, .advantage-4 {
-	margin-left: auto;
+	/*margin-left: auto;*/
 }
 .advantage-box h5, .advantage-box p {
 	padding-top: 10px;
@@ -130,6 +130,36 @@ li {
 #advantages .col-md-6:nth-child(n+3) {
 	padding-top: 40px;
 }
+
+.advantage-img-prof {
+	background: url(../images/advantages/experience.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.advantage-img-expir {
+	background: url(../images/advantages/professionalism.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+
+}
+.advantage-img-love {
+	background: url(../images/advantages/love.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.advantage-img-any-dif {
+	background: url(../images/advantages/dificult-dish.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.advantage-box {
+	margin-top: 20px;
+}
+
 .item-tile {
 	/*padding-bottom: 60px;*/
 	display: inline-block;
@@ -396,7 +426,7 @@ h3.city-name {
 #footer-list-chart a:hover, .more-lists:hover {
 	color: #fff;
 	transition: 0.4s;
-	background-color: #A6754B;
+	background-color: #F2B705;
 	border-radius: 0.4em; 
 }
 .footer-service ul {
