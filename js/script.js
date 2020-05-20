@@ -20,11 +20,21 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 });
 
 
+$(function(){
+  $('#event-request').submit(function(e){
+    e.preventDefault(); // отменяем поведение по умолчанию
+    var data = $(this).serialize(); // получаем все данные формы
+    console.log(data); // распечатываем их в консоль
+  });
+});
+
+
+
 
 
 $(function(){
     $(".navbar-toggler").click(function(){ // задаем функцию при нажатиии на элемент с классом out
-      $( ".caption" ).fadeToggle(); // плавно изменяя прозрачность скрываем все элементы <div>
+      $( ".hid" ).fadeToggle(); // плавно изменяя прозрачность скрываем все элементы <div>
     });
   });
 

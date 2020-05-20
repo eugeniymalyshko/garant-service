@@ -7,14 +7,18 @@ body {
 li {
 	list-style: none;
 }
+a {
+	text-decoration: none;
+}
 .title {
 	text-transform: uppercase;
 }
+
 /*--------------------------------------------------------
  [ start of HEADER ]
  -------------------------------------------------------*/
 #sp-header {
-	background: url(../images/main-pic/2000.jpg); no-repeat;
+	background: url(../images/banner/2000.jpg) no-repeat;
 	background-size: cover;
 	background-position:  center;
 	background-color: #f1f1f1;
@@ -67,7 +71,7 @@ li {
 	margin-left: 20px;
 }
 .navbar button {
-	padding-top: -15px;
+	/*margin-top: -15px;*/
 	font-weight: 100;
 	border: solid 1px #fff;
 	margin-top: -5px;
@@ -102,16 +106,116 @@ li {
 	font-weight: 300;
 	letter-spacing: 0.5px;
 }
-.caption button {
-	background-color: #577356;
+.caption button, .services-details button, .block-overlay button {
+	background-color: #81A64B;
 	border: 0;
 }
-.caption button:hover {
+.caption button:hover, .services-details button:hover {
 	background-color: #F2B705;
 }
 /*--------------------------------------------------------
  [ end of HEADER ]
  -------------------------------------------------------*/
+
+
+
+
+
+ /*-------------------------------------------------------
+ [ start of SERVICE ]
+ -------------------------------------------------------*/	
+#service {
+	background-color: #f1f1f1;
+	padding-bottom: 80px;
+}
+.main-service {
+	padding-top: 20px;
+}
+#service h4 {
+	padding-top: 15px;
+}
+#service .col-md-4:nth-child(n+4) {
+	padding-top: 20px;
+}
+.service-box {
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.service-box span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+	padding: 10px 0;
+}
+.block-overlay {
+	display: ;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background:rgba(255,255,255, 0.8);
+	line-height: 1.5;
+    padding:15px 25px;
+}
+.service-box:hover .block-overlay {
+	display: block;
+}
+.block-overlay .details {
+	/*position: relative;*/
+	font-size: 1em;
+	padding: 5px;
+	color: #fff;
+   	background-color: #577356;
+   	transition: 0.5s;
+
+}
+.block-overlay a, .block-overlay a:hover {
+	text-decoration: none;
+	color: #000;
+
+}
+.details:hover {
+	background-color: #F2B705;
+	color: #000;
+	transition: 0.5s;
+}
+.banquet {
+	background: url(../images/service/banquet.jpg);	
+}
+.desserts {
+	background: url(../images/service/desserts.jpg);	
+}
+.lunch {
+	background: url(../images/service/delivery.jpg);	
+}
+.board-food {
+	background: url(../images/service/plane.jpg);
+}
+.pizza {
+	background: url(../images/service/pizza.jpg);
+}
+.semifinished {
+	background: url(../images/service/ravioli.jpg);
+}
+.banquet, .desserts, .lunch, .board-food, .pizza, .semifinished {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*--------------------------------------------------------
+ [ end of SERVICE ]
+ -------------------------------------------------------*/
+
 
 
 /*--------------------------------------------------------
@@ -136,17 +240,6 @@ li {
    	transform: translate(0, -50%);
    	line-height: 1.7; 
 }
-/*.advantage-1, .advantage-2, .advantage-3, .advantage-4 {
-	margin: 20px 0;
-}*/
-.advantage-box h5, .advantage-box p {
-	/*padding-top: 10px;*/
-}
-
-#advantages .col-md-6:nth-child(n+3) {
-	/*padding-top: 40px;*/
-}
-
 .prof {
 	background: url(../images/advantages/experience.jpg) no-repeat;
 	background-size: cover;
@@ -186,124 +279,6 @@ div.advantage-expl > p{
  [ end of ADVANTAGES ]
  -------------------------------------------------------*/
 
-
- /*-------------------------------------------------------
- [ start of SERVICE ]
- -------------------------------------------------------*/	
-#service {
-	background-color: #f1f1f1;
-	padding-bottom: 80px;
-}
-.main-service {
-	padding-top: 20px;
-}
-#service h4 {
-	padding-top: 15px;
-}
-#service .col-md-4:nth-child(n+4) {
-	padding-top: 20px;
-}
-.service-box {
-	height: 300px;
-	position: relative;
-	overflow: hidden;
-	margin-top: 15px;
-}
-.service-box span {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	background-color: #000;
-	color: #fff;
-	opacity: .7;
-	padding: 10px 0;
-}
-.block-overlay {
-	display: none;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	background:rgba(255,255,255, 0.8);
-    padding:10px 25px;
-}
-.service-box:hover .block-overlay {
-	display: block;
-}
-.block-overlay {
-	transition: 8s;
-
-}
-/*.block-overlay h4 {
-	padding-top: 10px;
-}*/
-/*.block-overlay ul {
-	padding: 0;
-}*/
-/*.block-overlay ul li {
-	padding-top: 0.4em;
-	list-style: none;
-	font-size: 1.3em;
-}*/
-.block-overlay button {
-	border: 0;
-	display: flex;
-	margin: 0 auto;
-	position: relative;               
-   	top: 50%;                         
-   	background-color: #577356;
-   	color: #fff;
-   	transform: translate(0, -50%);
-
-}
-.block-overlay a, .block-overlay a:hover {
-	text-decoration: none;
-	color: #000;
-
-}
-.block-overlay button:hover {
-	background-color: #F2B705;
-	color: #000;
-	border: 0;
-}
-.banquet {
-	background: url(../images/service/banquet.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.desserts {
-	background: url(../images/service/desserts.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.lunch {
-	background: url(../images/service/delivery.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.board-food {
-	background: url(../images/service/plane.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.pizza {
-	background: url(../images/service/pizza.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.semifinished {
-	background: url(../images/service/ravioli.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-/*--------------------------------------------------------
- [ end of SERVICE ]
- -------------------------------------------------------*/
 /** LOCATIONS **/
 #locations {
 	background-color: #fff;
@@ -544,11 +519,12 @@ div.scrollup:hover {
  -------------------------------------------------------*/
 
 
+
  /*--------------------------------------------------------
  [ start of GALLERY PAGE ]
  -------------------------------------------------------*/
 #sp-header-p {
-	background: url(../images/main-pic/2000.jpg); no-repeat;
+	background: url(../images/banner/2000.jpg) no-repeat;
 	background-size: cover;
 	background-position:  center;
 	background-color: #f1f1f1;
@@ -561,15 +537,17 @@ div.scrollup:hover {
 	margin-top: 2em;
 	color: #fff;
 }
-#gallery {
-	padding: 90px 0;
+#service-caption {
+	padding: 45px 0;
 	background-color: #f1f1f1;
 }
 #gallery section { 
-	margin-bottom: 35px;
+	margin-bottom: 45px;
+}
+#gallery h5 {
+	margin-bottom: 45px;
 }
 .photo-box {
-	
 	border: solid 10px #fff;
 	width: 250px;
 	height: 250px;
@@ -678,7 +656,87 @@ div.scrollup:hover {
 	background-color: #f1f1f1;
 	border: solid 10px #fff;
 }
+/*--------------------------------------------------------
+ [ start of SERVICE CAPTION ]
+ -------------------------------------------------------*/
+#service-detailed {
+	padding: 45px 0;
+}
+#service-detailed h2 {
+	margin-bottom: 25px;
+}
+.services-details {
+	font-size: 0.9em;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+.services-details img:first-child {
+	width: 200px;
+	height: 130px;
+	float: left;
+	margin: 5px 15px 0 0;
+}
+#service-detailed ul li{
+list-style: disc;
+}
+.services-details button {
+	display: block;
+	margin: 0 auto;
+}
+ /*--------------------------------------------------------
+ [ end of SERVICE CAPTION ]
+ -------------------------------------------------------*/
 
+
+
+
+
+
+/*--------------------------------------------------------
+ [ start of BUFFET SET ]
+ -------------------------------------------------------*/
+#buffet-set {
+	padding: 90px 0;
+}
+.sp-basket i {
+	font-size: 2em;
+}
+#cart {
+	display: block;
+}
+
+#add-to-cart i {
+	background-color: #577356;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 15px;
+	transition: 0.5s;
+
+}
+.quantity-holder {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.minus, .plus {
+	background-color: #f1f1f1;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+
+	cursor: pointer;
+}
+#add-to-cart i:hover {
+	background-color: #F2B705;
+	color: #000;
+	cursor: pointer;
+	transition: 0.5s;
+}
+ /*--------------------------------------------------------
+ [ END of BUFFET SET ]
+ -------------------------------------------------------*/
 
 
 @media screen and (max-width: 991px) {
@@ -795,7 +853,12 @@ div.scrollup:hover {
 	.col2, .col3, .col6, .col7 {
 		margin-bottom: 10px;
 	}
-	
+	#sp-header-p {
+		height: 210px;
+	}
+	.page-title {
+		margin-top: 0.2em;
+	} 
 /************ CHECKED ************/
 
 
@@ -923,17 +986,31 @@ div.scrollup:hover {
 	.col2, .col3, .col6, .col7 {
 		margin-bottom: 10px;
 	}
-	
-
-
-
-
-
-	#footer-list-chart  {
-		padding: 5px 0;
+	#sp-header-p {
+		height: 200px;
+	}	
+	.page-title {
+		margin-top: 0.1em;
+	} 
+	#service-detailed {
+		padding: 20px 0;
 	}
-	#footer-list-chart:first-child {
+	.services-details {
+		font-size: 1em;
+		padding-bottom: 20px;
+	}
+
+
+
+	#list-chart  {
+		padding: 15px 0;
+
+	}
+	#list-chart:first-child {
 		padding-top: 20px;
+	}
+	#list-chart h5 {
+	padding-top: 15px;
 	}
 	div.scrollup {
 	   bottom: 5em; /* расстояние от нижнего края */
@@ -947,7 +1024,3 @@ div.scrollup:hover {
 		margin-bottom: 10px;
 	}	
 }
-
-
-
-

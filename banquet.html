@@ -7,16 +7,48 @@
     <title>Гарант-Сервіс</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="libs/animate/animate.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
     
   </head>
 <body>
-    <header id="sp-header">
+    <!-- Event Request -->
+    <div class="modal fade" id="orderEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderEventLabel">Форма замовлення</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="event-request">
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Ім'я</label>
+                            <input type="text" name="name" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number" class="col-form-label">Контактний номер</label>
+                            <input type="text" name="phone" class="form-control" id="phone-number">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Коментар:</label>
+                            <textarea class="form-control"  name="comment" id="recipient-name"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Надіслати</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./Event Request -->
+    <header id="sp-header-p">
             <div class="overlay"></div>
         <div class="container">
             <div class="container-inner">
@@ -60,114 +92,164 @@
                                     <a class="nav-link" href="index.html">Головна</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Про компанію</a>
+                                    <a class="nav-link" href="about.html">Про компанію</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Галерея</a>
+                                    <a class="nav-link" href="galery.html">Галерея</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">меню</a>
+                                    <a class="nav-link" href="menu.html">меню</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">звітність</a>
+                                    <a class="nav-link" href="reports.html">звітність</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="index.html">Контакти</a>
+                                    <a class="nav-link" href="contacts.htm">Контакти</a>
                                 </li>
                             </ul> <!-- ./navbar-nav -->
                         </div> <!-- ./navbarSupportedContent -->
                     </nav>
                 </div>
                 <!-- Caption -->
-                <div class="caption col-md-8 col-lg-6">
-                    <h4>Залиште нам всі моменти<br> з організації вашого свята </h4>
-                    <p class="d-none d-md-block d-lg-block" >Висококваліфікована команда професіоналів своєї справи, що постійно вдосконалюється та чітко слідкує за новими тенденціями в кулінарному світі на високому рівні втілить у життя захід будь якої складності.</p>
-                    <button type="button" id="make-order" class="btn btn-outline-light btn-lg">Замовити банкет</button>
+                <div class="page-title hid col-md-12">
+                    <h1 class="text-center">Банкет</h1>
                 </div>
             </div>
         </div> <!-- ./container -->
     </header>
+    <!-- service-detailed -->
+    <div id="service-detailed">
+        <div class="container">
+            <div class="row">   
+                <!-- Detailed Services -->
+                <div class="service-d-box col-md-10 ml-auto mr-auto">
+                    <h2 class="text-center">Який банкет замовити?</h2>
+                    <div class="services-details">
+                        <img src="images/service/banquet.jpg" class="d-none d-md-block" alt="">
+                        <p><b>Банкет</b> – урочистий і святковий захід з особливого приводу. Фінальная картина виглядає приголомшливо – красиво накриті столи, стильно оформлений св'ятковий зал, професіонально обслуговуючі гостей офіціанти.<br> 
+                        Компанія Гарант-Сервіс чудово знає, як, що та коли робити, щоб подарувати гостям якістне свято. Професійна команда створює незабутні заходи та переконує своіх клієнтів у правильності їх вибору.</p>
+                        <p><b>Мета звернення клієнтів «Гарант-Сервіс» буває, як особистого, так і суспільного характеру:</b></p>
+                        <ul>
+                            <li>
+                                <b>Корпоратив.</b> Виїзний банкет в Києві будь-якого формату на території офісу компанії або на виїзді;      
+                            </li>
+                            <li>
+                                <b>Весілля.</b> Клієнти розуміють серйозність грамотної організації святкування найважливішого дня в житті молодят;
+                            </li>
+                            <li>
+                                <b>Новий рік.</b> Коли свято проводиться поза домом, але в не менше затишній атмосфері; 
+                            </li>
+                            <li>
+                                <b>Конференції.</b> Презентація продукції або паузи між виступами стають ще приємніше з грамотно організованим банкетом;
+                            </li>
+                            <li>
+                                <b>День народження.</b> Іменинник повинен тільки приймати поздоровлення і разом з його гостями перебувати в комфорті від професійної організації виїзного банкету;
+                            </li>
+                            <li>
+                                <b>З іншого приводу.</b> Зустрічаються всілякі причини зібрати людей разом, а кожен запрошений заслуговує професійне обслуговування і смачні частування.
+                            </li>
+                        </ul>
+                        <h2 class="text-center">З чого складається виїзний банкет?</h2>
+                        <p>Для проведення банкету виконується серйозний обсяг роботи: домовитися з десятками постачальників, вибрати кращу продукцію, налагодити взаємодію персоналу і виконати всі побажання клієнта.</p>
+                        <p><b>Клієнти звертаються до «Гарант-Сервіс», щоб замовити банкет в Києві і не тільки, компанія забезпечує:</b></p>
+                        <img src="images/service/banquet_examp.jpg" alt="banquet-example" class="d-none d-md-block" width="350px" height="250px" style="float: right; margin: 0 15px;">
+                        <ul>
+                            <li>
+                                <b>Персонал.</b> Офіціанти є особою свята, а їх професіоналізму обслуговуюча компанія приділяє особливу увагу. Крім прямого обслуговування гостей, необхідно налагодити взаємодію всіх відділів кейтерингу, щоб все на святі працювало, як годинник;
+                            </li>
+                            <li>
+                                <b>Їжа.</b> Харчування на святі - це найважливіший фактор, від якого залежить загальна оцінка якості заходу. Тому кухарі так скрупульозно відносяться до розробки меню та приготування основних страв на очах гостей;
+                            </li>
+                            <li>
+                                <b>Напої.</b> Якості алкогольного напою приділяється така ж підвищена увага, як і організації інших процесів банкету;
+                            </li>
+                            <li>
+                                <b>Доставка.</b> При проведенні виїзного банкету за межами міста компанія виконує доставку ЗаЗаЗу;
+                            </li>
+                            <li>
+                                <b>Оформлення зони свята.</b> При взаємодії з клієнтом відповідальний менеджер розробляє стилістичне оформлення залу або приміщення майбутнього виїзного банкету. Потім виконується оформлення за розробленим дизайн-проекту.
+                            </li>
+                        </ul>
+                        <p>Замовники заявляють різні вимоги до заходу. Тому остаточний список послуг формується під нового клієнта індивідуально.</p>
+                        <h2 class="text-center">Як отримати таке свято?</h2>Замовити банкет можна декількома способами - залиште заявку на сайті або безпосередньо зв'яжіться з нами за вказаним телефоном. Всі подробиці про послуги, ціни, умови та строки ви дізнаєтеся від особистого менеджера. Якщо ви готові до свята, ми готові його зробити кращим у вашому житті.</p>
+                        <button type="button" class="btn btn-primary btn-outline-light btn-lg test" data-toggle="modal" data-target="#orderEvent">Замовити банкет</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./service-detailed -->
     
-
-
-
-
-
-
-
-
-
-
+    
     <footer>
         <div id="list-chart">
             <div class="container">
                 <div class="container-inner">
                     <div class="row ml-auto">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="categories-sm">Категорії</h5>
                                     <ul class="d-none d-md-block d-lg-block">
-                                        <li><a href="#">
+                                        <li><a href="buffet-set.html">
                                                 <span>Фуршетні набори
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="canape.html">
                                                 <span>Канапе і міні-закуски
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="salads.html">
                                                 <span>Салати
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="cold-apetizers.html">
                                                 <span>Холодні закуски</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="hot-apetizers.html">
                                                 <span>Гарячі закуски</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="burger.html">
                                                 <span>Сендвічі й бургери</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="desserts.html">
                                                 <span>Десерти</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="kids-menu.html">
                                                 <span>Дитяче меню</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="pastery.html">
                                                 <span>Випічка</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="lanch-boxes.html">
                                                 <span>Ланч-бокси</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="garnires.html">
                                                 <span>Гарніри</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="lenten-html">
                                                 <span>Пістні страви</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="drinks-html">
                                                 <span>Напої</span>
                                             </a>
                                         </li>
@@ -175,46 +257,46 @@
                                     </ul>         
                             </section>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                     <h5 class="service-sm">Послуги</h5>
                                 <ul class="d-none d-md-block d-lg-block">
                                     <li>
-                                        <a href="#">
+                                        <a href="buffet.html">
                                             <span>Фуршет</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="banquet.html">
                                             <span>Банкет</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="confectionary">
                                             <span>Кондитерські вироби</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="delivery">
                                             <span>Доставка страв</span>
                                         </a></li>
                                     <li class="hidden-list">
-                                        <a href="#">
+                                        <a href="jet.html">
                                             <span>Ботрове харчування</span>
                                         </a>
                                     </li>
                                     <li class="hidden-list">
-                                        <a href="#">
+                                        <a href="pizza.html">
                                             <span>Пироги та піцци</span>
                                         </a>
                                     </li>
                                     <li class="hidden-list">
-                                        <a href="#">
+                                        <a href="semi-finished.html">
                                             <span>Крафтові напівфабрикати</span>
                                         </a>
                                     </li>
                                     <li class="hidden-list">
-                                        <a href="#">
+                                        <a href="catering.html">
                                             <span>Кейтеринг</span>
                                         </a>
                                     </li>
@@ -235,37 +317,37 @@
                                 </p>
                             </section> -->
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="banquet-sm">Замовити банкет</h5>
                                     <ul class="d-none d-md-block d-lg-block">
                                         <li>
-                                            <a href="#">
+                                            <a href="banquet-menu.html">
                                                 <span>Банкетне меню</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="birthday.html">
                                                 <span>Банкет на день народження</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="corporate.html">
                                                 <span>Банкет на корпоратив</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="jubilee.html">
                                                 <span>Банкет на ювілей</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="wedding.html">
                                                 <span>Банкет на весілля</span>
                                             </a>
                                         </li>
                                         <li class="hidden-list">
-                                            <a href="#">
+                                            <a href="kids-banquet.html">
                                                 <span>Дитячий банкет</span>
                                             </a>
                                         </li>
@@ -273,27 +355,27 @@
                                     </ul>         
                             </section>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="catering-sm">Замовити кейтеринг</h5>
                                     <ul class="d-none d-md-block d-lg-block">
                                         <li>
-                                            <a href="#">
+                                            <a href="catering-home.html">
                                                 <span>Кейтеринг на дому</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="catering-office.html">
                                                 <span>Кейтеринг в офісі</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="catering-outdoor.html">
                                                 <span>Кейтеринг на природі</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="coffee-break.html">
                                                 <span>Кава-брейк</span>
                                             </a>
                                         </li>
@@ -354,16 +436,17 @@
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>    
     </footer>
     <!-- Go to Top --> 
     <div class="scrollup"><i class="fa fa-chevron-up"></i></div>
     <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script>
+   
+
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

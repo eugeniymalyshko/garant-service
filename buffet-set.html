@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
     <title>Гарант-Сервіс</title>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans&display=swap" rel="stylesheet"> 
@@ -16,7 +17,7 @@
     
   </head>
 <body>
-    <header id="sp-header-shop">
+    <header id="sp-header-p">
             <div class="overlay"></div>
         <div class="container">
             <div class="container-inner">
@@ -36,6 +37,9 @@
                                 <li class="sp-contact-email">
                                     <span class="fa fa-envelope" aria-hidden="true"></span>
                                     <a href="info@mail.com">info@mail.com</a>
+                                </li>
+                                <li class="sp-basket">
+                                    <i class="fas fa-shopping-basket"></i>
                                 </li>
                             </ul>
                         </div>
@@ -79,14 +83,60 @@
                     </nav>
                 </div>
                 <!-- Caption -->
-                <div class="caption col-md-8 col-lg-6">
-                    <h4>Залиште нам всі моменти<br> з організації вашого свята </h4>
-                    <p class="d-none d-md-block d-lg-block" >Висококваліфікована команда професіоналів своєї справи, що постійно вдосконалюється та чітко слідкує за новими тенденціями в кулінарному світі на високому рівні втілить у життя захід будь якої складності.</p>
-                    <button type="button" id="make-order" class="btn btn-outline-light btn-lg">Замовити банкет</button>
+                <div class="page-title col-md-12">
+                    <h1 class="text-center title">Фуршетні набори</h1>
+                    
                 </div>
             </div>
         </div> <!-- ./container -->
     </header>
+    <div id="buffet-set">
+        <div class="container">
+            <div class="container-inner">
+                <section class="row">
+                    <div id="catr" class="cart-1 col-md-12">
+                        <div class="row">
+                            <div class="cart-left col-md-3">
+                                <img class="cart-img" src="images/buffet-set/buffet1.jpg" alt="set1" height="150px" width="250px">
+                            </div>
+                            <div div class="cart-center col-sm-5">
+                                <a href="#">
+                                    <h4 class="title">Фуршетний набір №1</h4>
+                                </a> 
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi asperiores, explicabo eaque. Mollitia aliquam, impedit in voluptatibus. Placeat amet mollitia incidunt deleniti dolorum quas nesciunt alias eaque praesentium quo!</p>
+                                <span class="mass">Вага.................1000г.</span>
+                            </div>
+                            <div class="cart-right col-sm-4">
+                                <span class="price">2000
+                                    <span class="currency">₴</span>
+                                </span>
+                                <span class="old-price">
+                                    3000
+                                    <span class="currency">₴</span>
+                                </span>
+                                <form id="add-to-cart" action="" method="post">
+                                    <span class="quantity-holder">
+                                        <spat class="minus text-center" data-type="-">-</spat>
+                                        <input type="text" class="text-center" name="quantity" value="1">
+                                        <spat class="plus text-center" data-type="+">+</spat>
+                                        <input type="hidden" name="product-id" value="">
+                                    </span>
+                                    <span class="button">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </span>
+                                </form>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
     
 
     <footer>
