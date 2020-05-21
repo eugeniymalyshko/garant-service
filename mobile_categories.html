@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Гарант-Сервіс</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+
+  </head>
+<body>
+    <!-- Event Request -->
+    <div class="modal fade" id="orderEvent" tabindex="-1" role="dialog" aria-labelledby="orderEventLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderEventLabel">Форма замовлення</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="event-request">
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Ім'я</label>
+                            <input type="text" name="name" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number" class="col-form-label">Контактний номер</label>
+                            <input type="text" name="phone" class="form-control" id="phone-number">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Коментар:</label>
+                            <textarea class="form-control"  name="comment" id="recipient-name"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Надіслати</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./Event Request -->
+    <header id="sp-header-p">
+            <div class="overlay"></div>
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <!-- Contact information -->
+                    <div id="sp-top-right" class="col-lg-12 col-md-6">
+                        <div class="sp-column text-center text-lg-right">
+                            <ul class="sp-contact-info">
+                                <!-- <li class="sp-contact-phone">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                    <a href="+380441234567">+380 44 123 45 67</a>
+                                    </li> -->
+                                <li class="sp-contact-mobile">
+                                    <span class="fa fa-mobile" aria-hidden="true"></span>
+                                    <a href="+380441234567">+380 66 123 45 67</a>
+                                </li>
+                                <li class="sp-contact-email">
+                                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                                    <a href="info@mail.com">info@mail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!-- ./Contact information -->
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- logo -->
+                        <a href="index.html">
+                            <div class="navbar-brand mr-auto"></div>
+                        </a>
+                        <!-- Slogan -->
+                        <div class="slogan">
+                            <h6 class="">20 років<br> бездоганного<br> сервісу</h6>
+                        </div>
+                        <!-- Navbar Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                        </button>
+                        <!-- Links Header -->
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Головна</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Про компанію</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="galery.html">Галерея</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="menu.html">меню</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="reports.html">звітність</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="contacts.htm">Контакти</a>
+                                </li>
+                            </ul> <!-- ./navbar-nav -->
+                        </div> <!-- ./navbarSupportedContent -->
+                    </nav>
+                </div>
+                <!-- Caption -->
+                <div class="page-title hid col-md-12">
+                    <h1 class="text-center">Послуги</h1>
+                </div>
+            </div>
+        </div> <!-- ./container -->
+    </header>
+    <!-- Mobile view categories -->
+    <div id="m-categories">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row ml-auto">
+                    <div class="col-sm-6">
+                        <section class="m-service">
+                                <h5 class="title">Категорії</h5>
+                            <ul>
+                                <li>
+                                    <a href="buffet-set.html">
+                                        <span>Фуршетні набори</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="canape.html">
+                                        <span>Канапе і міні-закуски</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="salads.html">
+                                        <span>Салати</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cold-apetizers.html">
+                                        <span>Холодні закуски</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="hot-apetizers.html">
+                                        <span>Гарячі закуски</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="burger.html">
+                                        <span>Сендвічі й бургери</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="desserts.html">
+                                        <span>Десерти</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="kids-menu.html">
+                                        <span>Дитяче меню</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="pastery.html">
+                                        <span>Випічка</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lanch-boxes.html">
+                                        <span>Ланч-бокси</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="garnires.html">
+                                        <span>Гарніри</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lenten-html">
+                                        <span>Пістні страви</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="drinks-html">
+                                        <span>Напої</span>
+                                    </a>
+                                </li>
+                            </ul>         
+                        </section>
+                        <hr class="d-sm-none">
+                    </div>
+                    <div class="col-sm-6">
+                        <section class="m-service">
+                                <h5 class="title">Послуги</h5>
+                            <ul>
+                                <li>
+                                    <a href="buffet.html">
+                                        <span>Фуршет</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="banquet.html">
+                                        <span>Банкет</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="confectionary">
+                                        <span>Кондитерські вироби</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="delivery">
+                                        <span>Доставка страв</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jet.html">
+                                        <span>Ботрове харчування</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="pizza.html">
+                                        <span>Пироги та піцци</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="semi-finished.html">
+                                        <span>Крафтові напівфабрикати</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catering.html">
+                                        <span>Кейтеринг</span>
+                                    </a>
+                                </li>
+                            </ul>         
+                        </section>
+                        <hr class="d-sm-none">
+                    </div>
+                        
+
+
+                            <!-- вывести в отдельный блок
+                             <section class="contact-inform">
+                                <h5 class="text-center title">Контактна інформація</h5>
+                                <p>
+                                    Місцезнаходження: 01001, м. Київ, вул. Lorem Ipsum, 1<br>
+                                    Поштова адреса: Україна, 01001, м. Київ Lorem Ipsum, 1<br>
+                                    +38-(066)-123-45-67 <br>info@mail.com
+                                </p>
+                    
+                            </section> -->
+                    <div class="col-sm-6">
+                       <section class="m-service ">
+                                <h5 class="title">Замовити банкет</h5>
+                            <ul>
+                                <li>
+                                    <a href="banquet-menu.html">
+                                    <span>Банкетне меню</span>
+                                    </a>
+                                 </li>
+                                <li>
+                                    <a href="birthday.html">
+                                        <span>Банкет на день народження</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="corporate.html">
+                                        <span>Банкет на корпоратив</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jubilee.html">
+                                        <span>Банкет на ювілей</span>
+                                     </a>
+                                </li>
+                                <li>
+                                    <a href="wedding.html">
+                                        <span>Банкет на весілля</span>
+                                    </a>
+                                    </li>
+                                <li>
+                                     <a href="kids-banquet.html">
+                                         <span>Дитячий банкет</span>
+                                    </a>
+                                </li>   
+                            </ul>         
+                        </section>  
+                        <hr class="d-sm-none">
+                    </div>           
+                    <div class="col-sm-6">
+                        <section class="m-service">
+                                <h5 class="title">Замовити кейтеринг</h5>
+                            <ul>
+                                <li>
+                                    <a href="catering-home.html">
+                                        <span>Кейтеринг на дому</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catering-office.html">
+                                        <span>Кейтеринг в офісі</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catering-outdoor.html">
+                                        <span>Кейтеринг на природі</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="coffee-break.html">
+                                        <span>Кава-брейк</span>
+                                    </a>
+                                </li>
+                            </ul>         
+                        </section>
+                    </div>           
+                </div> 
+            </div>
+        </div>
+    </div>   
+    <footer>
+        <!-- Copyright -->
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="container-inner">
+                    <div id="rowall" class="row">
+                        <div class="sp-1 col-md-6 col-sm-8">
+                            <div class="column-left text-center text-sm-left text-lg-left">
+                                <span class="copyright">&copy; 2020 Гарант-Сервіс. Всі права захищено.</span>
+                            </div>      
+                        </div>
+                        <!-- Social buttons -->
+                        <div class="sp-2 col-md-6 col-sm-4">
+                            <div class="column-right text-center text-sm-right text-lg-right">
+                                <ul class="sp-social-icons">
+                                    <li class="social-icon-facebook">
+                                        <a target="_blank" href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icon-instagram">
+                                        <a target="_blank" href="#">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icon-pinterest">
+                                        <a target="_blank" href="#">
+                                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- ./Social buttons --> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <!-- Go to Top --> 
+    <div class="scrollup"><i class="fa fa-chevron-up"></i></div>
+    <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

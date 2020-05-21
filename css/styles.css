@@ -310,11 +310,8 @@ div.advantage-expl > p{
  /*-------------------------------------------------------
  [ start of FEEDBACKS ]
  -------------------------------------------------------*/
-#feedbacks {
-	background-color: #fff;
-
 }
-.block-one-example {
+.block-one {
 	margin:30px 0;
 	position: relative;
 }
@@ -323,13 +320,6 @@ div.advantage-expl > p{
 	background-color: #fff;
 }
 
-.inner-testimonial > img{
-	max-width: 128px;
-	margin:0 auto 15px;
-	opacity: 0;
-	-webkit-transition:all 1.3s linear;
-	transition:all 1.3s linear;
-}
 h3.city-name {
 	padding:10px 0;
 	font-size: 20px;
@@ -345,49 +335,6 @@ h3.city-name {
 }
 .block-items {
 	cursor: default;
-}
-/*Изменяем внешний вид элементов управления (точки) */
-.owl-theme .owl-dots .owl-dot span {
-	width: 10px;
-	height: 10px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span{
-	width: 14px;
-	height: 14px;
-}
-
-/*Стрелки*/
-.owl-my-nav {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-.owl-my-nav .owl-prev,
-.owl-my-nav .owl-next {
-	position: absolute;
-	width: 60px;
-	top:34%;
-	font-size: 100px;
-	z-index: 20;
-	cursor:pointer;
-	opacity: 0.5;
-	-webkit-transition:opacity .3s ease;
-	transition:opacity .3s ease;
-}
-
-.owl-my-nav .owl-prev:hover,
-.owl-my-nav .owl-next:hover{
-	opacity: 0.8;
-}
-
-.owl-my-nav .owl-prev {
-	left: 50px;
-}
-
-.owl-my-nav .owl-next {
-	right: 50px;
-	text-align: right;
 }
 
 /*--------------------------------------------------------
@@ -419,7 +366,7 @@ h3.city-name {
 #list-chart a:hover, .more-lists:hover {
 	color: #fff;
 	transition: 0.4s;
-	background-color: #577356;
+	background-color: #28a745;
 	border-radius: 0.4em; 
 }
 .footer-service ul {
@@ -437,6 +384,7 @@ h3.city-name {
 	display: inline-block;
 	cursor: pointer;
 	margin: 10px 0;
+	color: #000;
 }
 
 #footer-bottom {
@@ -450,13 +398,6 @@ h3.city-name {
 }
 .copyright {
 	padding: 0;
-}
-
-
-a.reports, a.reports:hover {
-	text-decoration: none;
-	color: #fff;
-
 }
 .sp-social-icons {
 	padding: 0;
@@ -713,7 +654,7 @@ list-style: disc;
 }
  /*--------------------------------------------------------
  [ END of BUFFET SET ]
- -------------------------------------------------------*/
+ --------------------------------------------------------*/
 
 
 @media screen and (max-width: 991px) {
@@ -861,6 +802,26 @@ list-style: disc;
 	.owl-my-nav .owl-next {
 		right: 10px;
 	}
+	/*--------------------------------------------------------
+ [ start of M-CATEGORIES
+ --------------------------------------------------------*/
+#m-categories {
+	padding: 25px 0;
+}
+.m-service h5 {
+	margin: 15px 0;
+}
+.m-service li {
+	margin-top: 5px;
+}
+.m-service li a {
+	color: #000;
+}
+
+/*--------------------------------------------------------
+ [ start of M-CATEGORIES
+ --------------------------------------------------------*/
+
 
 
 @media screen and (max-width: 480px) {
@@ -1000,4 +961,25 @@ list-style: disc;
 		order: 0;
 		margin-bottom: 10px;
 	}	
+/*--------------------------------------------------------
+ [ start of M-CATEGORIES
+ --------------------------------------------------------*/
+#m-categories {
+	padding: 25px 0;
+}
+.m-service h5 {
+	margin: 15px 0;
+}
+.m-service li {
+	margin-top: 5px;
+}
+.m-service li a {
+	color: #000;
+}
+
+/*--------------------------------------------------------
+ [ start of M-CATEGORIES
+ --------------------------------------------------------*/
+
+
 }
