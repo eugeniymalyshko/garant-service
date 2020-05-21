@@ -19,7 +19,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   });
 });
 
-
+// Form event-request
 $(function(){
   $('#event-request').submit(function(e){
     e.preventDefault(); // отменяем поведение по умолчанию
@@ -31,7 +31,7 @@ $(function(){
 
 
 
-
+// Hide caption on banner
 $(function(){
     $(".navbar-toggler").click(function(){ // задаем функцию при нажатиии на элемент с классом out
       $( ".hid" ).fadeToggle(); // плавно изменяя прозрачность скрываем все элементы <div>
@@ -39,7 +39,7 @@ $(function(){
   });
 
 
-//** ScrollUp Hide/Show **
+//ScrollUp Hide/Show
 $(function() {
   //при нажатии на кнопку scrollup
   $('.scrollup').click(function() {
@@ -52,7 +52,7 @@ $(function() {
 // при прокрутке окна (window)
 $(window).scroll(function() {
   // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop()>200) {
+  if ($(this).scrollTop()>400) {
     // то сделать кнопку scrollup видимой
     $('.scrollup').fadeIn();
   }
@@ -62,6 +62,7 @@ $(window).scroll(function() {
   }
 });
 
+// Feedbacks
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     loop:true,
@@ -92,6 +93,7 @@ $(document).ready(function() {
   });
 });
 
+// scroll dpwn lists footer
 $('.more-lists').on('click', function() {
   if ($(this).hasClass('active')) {
     $(this).removeClass('active').text('Більше...');

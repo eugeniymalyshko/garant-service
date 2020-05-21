@@ -13,7 +13,9 @@ a {
 .title {
 	text-transform: uppercase;
 }
-
+.b-pressed:active {
+	border: 0;
+}
 /*--------------------------------------------------------
  [ start of HEADER ]
  -------------------------------------------------------*/
@@ -71,7 +73,6 @@ a {
 	margin-left: 20px;
 }
 .navbar button {
-	/*margin-top: -15px;*/
 	font-weight: 100;
 	border: solid 1px #fff;
 	margin-top: -5px;
@@ -106,19 +107,10 @@ a {
 	font-weight: 300;
 	letter-spacing: 0.5px;
 }
-.caption button, .services-details button, .block-overlay button {
-	background-color: #81A64B;
-	border: 0;
-}
-.caption button:hover, .services-details button:hover {
-	background-color: #F2B705;
-}
+
 /*--------------------------------------------------------
  [ end of HEADER ]
  -------------------------------------------------------*/
-
-
-
 
 
  /*-------------------------------------------------------
@@ -157,7 +149,7 @@ a {
 	padding: 10px 0;
 }
 .block-overlay {
-	display: ;
+	display: none;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -170,24 +162,9 @@ a {
 .service-box:hover .block-overlay {
 	display: block;
 }
-.block-overlay .details {
-	/*position: relative;*/
-	font-size: 1em;
-	padding: 5px;
-	color: #fff;
-   	background-color: #577356;
-   	transition: 0.5s;
-
-}
-.block-overlay a, .block-overlay a:hover {
-	text-decoration: none;
-	color: #000;
-
-}
-.details:hover {
-	background-color: #F2B705;
-	color: #000;
-	transition: 0.5s;
+#details {
+margin-left: 50%;
+transform: translate(-50%, 0);
 }
 .banquet {
 	background: url(../images/service/banquet.jpg);	
@@ -729,7 +706,7 @@ list-style: disc;
 	cursor: pointer;
 }
 #add-to-cart i:hover {
-	background-color: #F2B705;
+	/*background-color: #F2B705;*/
 	color: #000;
 	cursor: pointer;
 	transition: 0.5s;
@@ -888,7 +865,7 @@ list-style: disc;
 
 @media screen and (max-width: 480px) {
 	#sp-header {
-  		background: url(../images/main-pic/1200px.jpg) no-repeat;
+  		background: url(../images/banner/1200px.jpg) no-repeat;
   		background-size: cover;
 		background-position:  center;
   	}	
