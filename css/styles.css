@@ -16,6 +16,14 @@ a {
 .b-pressed:active {
 	border: 0;
 }
+.old-price {
+	text-decoration: line-through;
+	color: grey;
+	padding-right: 5px;
+}
+.quantity-window {
+	max-width: 40px;
+}
 /*--------------------------------------------------------
  [ start of HEADER ]
  -------------------------------------------------------*/
@@ -167,7 +175,7 @@ margin-left: 50%;
 transform: translate(-50%, 0);
 }
 .banquet {
-	background: url(../images/service/banquet.jpg);	
+	/*background: url(../images/service/banquet.jpg);	*/
 }
 .desserts {
 	background: url(../images/service/desserts.jpg);	
@@ -622,40 +630,106 @@ list-style: disc;
 #cart {
 	display: block;
 }
-
 #add-to-cart i {
-	background-color: #577356;
-	color: #fff;
-	font-size: 1.2em;
-	padding: 10px 20px;
-	border-radius: 15px;
-	transition: 0.5s;
-
 }
 .quantity-holder {
 	margin-right: 10px;
 	display: inline-block;
 	vertical-align: middle;
 }
-
-.minus, .plus {
-	background-color: #f1f1f1;
-	width: 200px;
-	height: 20px;
-	padding: 5px;
-
-	cursor: pointer;
-}
-#add-to-cart i:hover {
-	/*background-color: #F2B705;*/
-	color: #000;
-	cursor: pointer;
-	transition: 0.5s;
-}
  /*--------------------------------------------------------
  [ END of BUFFET SET ]
  --------------------------------------------------------*/
 
+/*--------------------------------------------------------
+ [ start of DETAILED-SET ]
+ -------------------------------------------------------*/
+#detailed-set {
+	padding: 90px 0;
+}
+.zebra {
+	width: 100%;
+}
+table {
+	border-collapse: collapse; 
+  	line-height: 1.1;  
+}
+caption {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  padding: 10px; 
+}
+td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+}
+td a {
+  	color: #000;
+  	font-size: 1.1em;
+}
+td a:hover {
+	/*text-decoration: none;*/
+	color: #000;
+}
+/*--------------------------------------------------------
+ [ end of DETAILED-SET ]
+ -------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+ [ start of SINGLE-PRODUCT ]
+ -------------------------------------------------------*/
+#single-product {
+	padding: 45px 0;
+}
+#single-product h1 {
+	padding-bottom: 25px;
+}
+.cart-big-img {
+	margin: 0 40px 40px 0;
+}
+.characteristic {
+	margin-top: 30px;
+
+}
+.characteristic .mass, .characteristic .min-order {
+	color: #A9A9A9;
+}
+.cart-right {
+	display: inline-block;
+}
+.add-tocart {
+	padding-top: 25px;
+}
+.currencies {
+	margin: 10px 0;
+}
+form i:active {
+	border: 0;
+}
+.price-single {
+	font-size: 1.2em;
+}
+.parrent-prod-box {
+	padding-top: 10px;
+	height: 400px;
+}
+.parrent-prod-box img {
+	width: 100%;
+}
+.parrent-prod-box a {
+	color: #000;
+	font-size: 0.8em;
+}
+
+ /*--------------------------------------------------------
+ [ enf of SINGLE-PRODUCT ]
+ -------------------------------------------------------*/
 
 @media screen and (max-width: 991px) {
 	.navbar-nav {

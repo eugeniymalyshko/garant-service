@@ -1,22 +1,18 @@
 <!doctype html>
-<html lang="uk">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+   	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
     <title>Гарант-Сервіс</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  </head>
+</head>
 <body>
     <!-- Event Request -->
-    <div class="modal fade" id="orderEvent" tabindex="-1" role="dialog" aria-labelledby="orderEventLabel" aria-hidden="true">
+    <div class="modal fade" id="orderEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -50,7 +46,7 @@
             </div>
         </div>
     </div> <!-- ./Event Request -->
-    <header id="sp-header">
+    <header id="sp-header-p">
             <div class="overlay"></div>
         <div class="container">
             <div class="container-inner">
@@ -71,13 +67,7 @@
                                     <span class="fa fa-envelope" aria-hidden="true"></span>
                                     <a href="info@mail.com">info@mail.com</a>
                                 </li>
-                                <li class="smalcart">
-                                    <span class="fas fa-shopping-basket"></span>
-                                    <?=$smal_cart['cart_count']?> шт.
-                                    <!-- <br/><a href=''>Оформити замовлення</a> -->
-                                </li>
                             </ul>
-
                         </div>
                     </div> <!-- ./Contact information -->
                     <nav class="navbar navbar-expand-lg">
@@ -119,281 +109,226 @@
                     </nav>
                 </div>
                 <!-- Caption -->
-                <div class="caption hid col-md-8 col-lg-6">
-                    <h4>Залиште нам всі моменти<br> з організації вашого свята </h4>
-                    <p class="d-none d-md-block d-lg-block" >Висококваліфікована команда професіоналів своєї справи, що постійно вдосконалюється та чітко слідкує за новими тенденціями в кулінарному світі на високому рівні втілить у життя захід будь якої складності.</p>
-                    <button type="button" class="btn btn-outline-success active btn-lg b-pressed" data-toggle="modal" data-target="#orderEvent">Замовити банкет</button>
+                <div class="page-title hid col-md-12">
+                    <h2 class="text-center title">Фуршетні набори</h2>
                 </div>
             </div>
         </div> <!-- ./container -->
     </header>
-    <!-- Service -->
-    <div id="service">
-        <div class="container main-service">
-                <h4 class="text-center title">Наші Послуги</h4>
-            <div class="row">
-                <!-- Banquet -->
-                <div class="col-md-4">
-                    <div class="service-box banquet">
-                        <img src="images/service/banquet.jpg" alt="">
-                        <div class="block-overlay">
-                            <p>Банкет – урочистий і святковий захід з особливого приводу. Фінальная картина виглядає приголомшливо – красиво накриті столи, стильно оформлений св'ятковий зал, професіонально обслуговуючі гостей офіціанти...</p>
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+    <!-- Single Product Page -->
+    <div id="single-product">
+        <div class="container">
+            <div class="row">   
+                	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                <div id="cart" class="cart-1 col-md-12">
+                    <div class="row">
+                        <div class="cart-big-img">
+                            <img class="cart-img" src="images/buffet-set/buffet1.jpg" alt="set1" height="350px" width="500px">
                         </div>
-                        <span>Банкет</span>
+                        <div class="characteristic col-md-6">
+                                <h4 class="title">Характеристика</h4>
+                                <span class="mass">Вага..................................................................................... 30 г.</span><br>
+                                <span class="min-order">Мінімальна кількість для замовлення товару........... 10 шт.</span><br>
+                            <div class="add-tocart">
+                                <span class="old-price">3000
+                                    <span class="currency">₴</span>
+                                </span>
+                                <span class="price-single">2000
+                                    <span class="currency">₴</span>
+                                </span> 
+                            </div> 
+                            <form action="" method="post">
+                               	<span class="quantity-holder">
+                                	<span class="btn btn-outline-success  b-presssed btn-sm minus text-center" data-type="-">-</span>
+                                   	<input type="text" class="quantity-window text-center" name="quantity" value="10">
+                                    <span class="btn btn-outline-success  b-presssed btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="add-to-basket btn btn-outline-success b-presssed">
+                                    <i class="fas fa-shopping-basket">&nbsp;&nbsp;Придбати</i>
+                                </span>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <!-- Desserts -->
-                <div class="col-md-4">
-                    <div class="service-box desserts">
-                        <div class="block-overlay">
-                        
-                        <!--  <h4 class="text-center">Кондитерські Вироби:</h4>
-                            <ul class="text-center">
-                                <li>Десерт 1</li>
-                                <li>Десерт 2</li>
-                                <li>Десерт 3</li>
-                                <li>Десерт 4</li>
-                                <li>Десерт 5</li>
-                            </ul> -->
-                            
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+                <div class="parrent-products">
+                        <h4 class="title">З цим товаром також замовляють:</h4>
+                    <div class="row">
+                        <!-- 1 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
                         </div>
-                        <span>Кондитерські Вироби</span>
-                    </div>
-                </div>
-                <!-- Lunch Delivery -->
-                <div class="col-md-4">
-                    <div class="service-box lunch">
-                        <div class="block-overlay">
-                            
-                            <!-- <h4 class="text-center">Офісне Харчування:</h4>
-                            <ul class="text-center">
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                            </ul> -->
-                            
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+                        <!-- 2 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
                         </div>
-                        <span>Офісне Харчування</span>
-                    </div>
-                </div>
-                <!-- Board Food -->
-                <div class="col-md-4">
-                    <div class="service-box board-food">
-                        <div class="block-overlay">
-                            
-                            <!-- <h4 class="text-center">Бортове харчування:</h4>
-                            <ul class="text-center">
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                            </ul> -->
-                           
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+                        <!-- 3 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
                         </div>
-                        <span>Бортове харчування</span>
-                    </div>
-                </div>
-                <!-- Pizza & More -->
-                <div class="col-md-4">
-                    <div class="service-box pizza">
-                        <div class="block-overlay">
-                            
-                            <!-- <h4 class="text-center">Пироги та піцци:</h4>
-                            <ul class="text-center">
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                            </ul> -->
-                            
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+                        <!-- 4 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
                         </div>
-                        <span>Пироги та піцци</span>
-                    </div>
-                </div>
-                <!-- Semifinished Food -->
-                <div class="col-md-4">
-                    <div class="service-box semifinished">
-                        <div class="block-overlay">
-                            
-                            <!-- <h4 class="text-center">Крафтові напівфабрикати:</h4>
-                            <ul class="text-center">
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                                <li>lorem ipsum</li>
-                            </ul> -->
-                            
-                            <a href="banquet.html" id="details" class="btn btn-outline-success active btn-sm b-pressed" role="button" aria-pressed="true">Докладнійше</a>
+                        <!-- 5 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
                         </div>
-                            <span>Крафтові напівфабрикати</span>
+                        <!-- 6 -->
+                        <div class="parrent-prod-box col-md-2">
+                                <img src="images/buffet-set/buffet1.jpg" alt="">
+                            <a href="#"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis, necessitatibus quia, corporis aspernatur delectus.</b></a><hr>
+                            <form id="add-to-cart" action="" method="post">
+                                <div class="currencies">
+                                    <span class="old-price">3000
+                                        <span class="currency">₴</span>
+                                    </span>
+                                    <span class="price">2000
+                                        <span class="currency">₴</span>
+                                    </span>  
+                                </div>       
+                                <span class="quantity-holder">
+                                    <span class="btn btn-outline-success btn-sm minus text-center" data-type="-">-</span>
+                                    <input type="text" class="text-center quantity-window" name="quantity" value="5">
+                                    <span class="btn btn-outline-success btn-sm plus text-center" data-type="+">+</span>
+                                    <input type="hidden" name="product-id" value="">
+                                </span>
+                                <span class="btn btn-outline-success  b-presssed">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>    
+                            </form> 
+                        </div>     
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- ./cotnent-service -->
-    <!-- Advantages -->
-    <div id="advantages">
-        <div class="container">
-                <h4 class="title text-center">Наші переваги</h4>
-            <div class="row">
-                <!-- Advantage-1 -->
-                <div class="advantage-box col-md-6 col1">
-                    <div class="advantage-1"> 
-                        <h5 class="title">Досвід</h5>
-                        <p>
-                        Працюємо у сфері обслуговування з 2000&nbsp;р.&nbsp; та розуміємо, що потрібно нашім клієнтам. Наші кліенти вважають Гарант-Сервіс – одним з кращих банкетних закладів столиці, а ми робимо усе, щоб відповідати цій високій оцінці.
-                        </p>
-                    </div>
-                </div>
-                <div class="advantage-box col-md-6 col2">
-                    <div class="advantage-img prof"></div>
-                </div>
-                
-                <!-- Advantage-2 -->
-                <div class="advantage-box col-md-6 col3">
-                    <div class="advantage-img expir"></div>
-                </div>
-                <div class="advantage-box col-md-6 col4">
-                    <div class="advantage-2">
-                        <h5 class="title">професіоналізм</h5>
-                        <p>
-                            наші клієнти отримують високоякісне обслуговування, вишукану організацію заходів і, звичайно, розкішні страви від першокласних кухарів.
-                        </p>
-                    </div>
-                </div>
-                <!-- Advantage-3 -->
-                <div class="advantage-box col-md-6 col5">
-                    <div class="advantage-3">
-                        <h5 class="title">любов до своєї справи</h5>
-                            <p>
-                                Наша компанія візьме на себе підготовку св'ята, бо ми люимо організовувати і знаєм, як 
-                                забезпечити ненав'язливий сервіс.
-                            </p>
-                    </div>
-                </div>
-                <div class="advantage-box col-md-6 col6">
-                    <div class="advantage-img love"></div>
-                </div>
-                <!-- Advantage-4 -->
-                <div class="advantage-box col-md-6 col7">
-                    <div class="advantage-img any-dif"></div>
-                </div>
-                <div class="advantage-box col-md-6 col8">
-                        <div class="advantage-4">
-                            <h5 class="title">страви будь якої складності</h5>
-                            <p>
-                                Солодкі та ситні сети, дивовижні десерти, апетитна випічка, шикарні банкетні страви, холодні та гарячі закуски. Легко знайти те, що підійде для вашого заходу: фуршетні набори для кава-брейків, гарячие страви для банкетів, десерти для солодкого столу на весілля або день нарождення.
-                            </p>
-                        </div>
-                </div>
-                </div>
-                
+    </div> <!-- ./Single-product -->
+    
+    
 
-            </div>
-        </div>
-    <!-- Locations -->
-   <!--  <div id="locations">
-        <div class="container ">
-                <h5 class="text-center title">Локації для заходів</h5>
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="#">
-                        <div id="location-1" class="locations-box">
-                            <span>Локація 1</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div id="location-2" class="locations-box">
-                            <span>Локація 2</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div id="location-3" class="locations-box">
-                            <span>Локація 3</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div id="location-4" class="locations-box">
-                            <span>Локація 4</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> --> <!-- ./locations -->
-    <div id="testimonials">
-        <div class="container">
-                <h5 class="title text-center">Останні Відгуки</h5>
-                <div class="block-one">
-                    <div id="customNav" class="owl-my-nav"></div>
-                        <div class="owl-carousel block-items">
-                            <div class="item">
-                                <div class="inner-testimonial">
-                                    <h3 class="city-name">Іван </h3>
-                                    <p class="text-testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="inner-testimonial">
-                                    <h3 class="city-name">Світлана</h3>
-                                    <p class="text-testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="inner-testimonial">
-                                    <h3 class="city-name">Олександр</h3>
-                                    <p class="text-testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto neque corporis nemo assumenda deserunt numquam commodi obcaecati, quidem praesentium. Nobis dolorem rem totam, esse modi maiores recusandae non sit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>      
-                </div> <!-- ./block-one -->
-            </div>
-        </div>
-    </div>
+
+
     <footer>
         <div id="list-chart">
             <div class="container">
                 <div class="container-inner">
                     <div class="row ml-auto">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="categories-sm">Категорії</h5>
                                     <ul class="d-none d-md-block d-lg-block">
                                         <li><a href="buffet-set.html">
-                                                <span>Фуршетні набори</span>
+                                                <span>Фуршетні набори
                                             </a>
                                         </li>
                                         <li>
                                             <a href="canape.html">
-                                                <span>Канапе і міні-закуски</span>
+                                                <span>Канапе і міні-закуски
                                             </a>
                                         </li>
                                         <li>
                                             <a href="salads.html">
-                                                <span>Салати</span>
+                                                <span>Салати
                                             </a>
                                         </li>
                                         <li>
@@ -446,13 +381,11 @@
                                                 <span>Напої</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <span class="more-lists">Більше...</span>
-                                        </li>       
+                                        <span class="more-lists">Більше...</span>
                                     </ul>         
                             </section>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                     <h5 class="service-sm">Послуги</h5>
                                 <ul class="d-none d-md-block d-lg-block">
@@ -474,8 +407,7 @@
                                     <li>
                                         <a href="delivery">
                                             <span>Доставка страв</span>
-                                        </a>
-                                    </li>
+                                        </a></li>
                                     <li class="hidden-list">
                                         <a href="jet.html">
                                             <span>Ботрове харчування</span>
@@ -496,26 +428,11 @@
                                             <span>Кейтеринг</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <span class="more-lists">Більше...</span>
-                                    </li>   
+                                    <span class="more-lists">Більше...</span>
                                 </ul>         
                             </section>
-
-
-
-
-                            <!-- вывести в отдельный блок
-                             <section class="contact-inform">
-                                <h5 class="text-center title">Контактна інформація</h5>
-                                <p>
-                                    Місцезнаходження: 01001, м. Київ, вул. Lorem Ipsum, 1<br>
-                                    Поштова адреса: Україна, 01001, м. Київ Lorem Ipsum, 1<br>
-                                    +38-(066)-123-45-67 <br>info@mail.com
-                                </p>
-                            </section> -->
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="banquet-sm">Замовити банкет</h5>
                                     <ul class="d-none d-md-block d-lg-block">
@@ -549,13 +466,11 @@
                                                 <span>Дитячий банкет</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <span class="more-lists">Більше...</span>
-                                        </li>    
+                                        <span class="more-lists">Більше...</span>
                                     </ul>         
                             </section>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <section class="footer-service">
                                 <h5 class="catering-sm">Замовити кейтеринг</h5>
                                     <ul class="d-none d-md-block d-lg-block">
@@ -581,6 +496,13 @@
                                         </li>
                                     </ul>         
                             </section>
+                        </div>
+                        
+
+
+
+
+
                             <!-- <section class="map">
                                 <h5>Прокласти маршрут</h5>
                                 <a >
@@ -599,7 +521,7 @@
                     <div id="rowall" class="row">
                         <div class="sp-1 col-md-6 col-sm-8">
                             <div class="column-left text-center text-sm-left text-lg-left">
-                                <span class="copyright">&copy; 2020 Гарант-Сервіс. Всі права захищено.</span>
+                                <span class="copyright">&copy 2020 Гарант-Сервіс. Всі права захищено.</span>
                             </div>      
                         </div>
                         <!-- Social buttons -->
@@ -607,23 +529,25 @@
                             <div class="column-right text-center text-sm-right text-lg-right">
                                 <ul class="sp-social-icons">
                                     <li class="social-icon-facebook">
-                                        <a target="_blank" href="#">
+                                        <a target="_blanc" href="#" aria-lable="facebook">
                                             <i class="fa fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="social-icon-instagram">
-                                        <a target="_blank" href="#">
+                                        <a target="_blanc" href="#" aria-lable="instagram">
                                             <i class="fa fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="social-icon-pinterest">
-                                        <a target="_blank" href="#">
+                                        <a target="_blanc" href="#" aria-lable="pinterest">
                                             <i class="fa fa-pinterest" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div> <!-- ./Social buttons --> 
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -631,13 +555,13 @@
     </footer>
     <!-- Go to Top --> 
     <div class="scrollup"><i class="fa fa-chevron-up"></i></div>
-    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/299232f238.js" crossorigin="anonymous"></script>
+   
+
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
-    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
